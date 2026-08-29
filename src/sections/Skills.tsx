@@ -1,15 +1,39 @@
 import { Badge, Card, SectionTitle } from '../components'
-import { skills } from '../data/skills'
-import type { SkillCategory } from '../types'
+import { skillGroups } from '../data/skills'
+import { useInView } from '../hooks/useInView'
+import type { SkillGroup } from '../types'
 
-const categoryLabels: Record<SkillCategory, string> = {
-  frontend: 'Frontend',
-  backend: 'Backend',
-  tools: 'Herramientas',
-  other: 'Otros',
+function SkillCard({ group, index }: { group: SkillGroup; index: number }) {
+  const { ref, isInView } = useInView<HTMLDivElement>()
+  const Icon = group.icon
+
+  return (
+    <Card
+      ref={ref}
+      className={isInView ? 'animate-fade-in-up' : 'opacity-0'}
+      style={isInView ? { animationDelay: `${index * 80}ms` } : undefined}
+    >
+      <div className="mb-4 flex items-center gap-3">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-400">
+          <Icon className="h-5 w-5" aria-hidden="true" />
+        </span>
+        <h3 className="text-sm font-semibold text-slate-900 dark:text-white">
+          {group.category}
+        </h3>
+      </div>
+      <div className="flex flex-wrap gap-2">
+        {group.items.map((item) => (
+          <Badge
+            key={item}
+            className="transition-colors hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 dark:hover:border-indigo-500/40 dark:hover:bg-indigo-500/10 dark:hover:text-indigo-300"
+          >
+            {item}
+          </Badge>
+        ))}
+      </div>
+    </Card>
+  )
 }
-
-const categories: SkillCategory[] = ['frontend', 'backend', 'tools', 'other']
 
 export function Skills() {
   return (
@@ -17,26 +41,12 @@ export function Skills() {
       <SectionTitle
         eyebrow="Habilidades"
         title="Tecnologías con las que trabajo"
-        description="Lenguajes, frameworks y herramientas que uso en mi día a día."
+        description="Stack organizado por área, de lo que uso a diario a las herramientas que complementan mi flujo de trabajo."
       />
-      <div className="grid gap-6 sm:grid-cols-2">
-        {categories.map((category) => {
-          const items = skills.filter((skill) => skill.category === category)
-          if (items.length === 0) return null
-
-          return (
-            <Card key={category}>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-                {categoryLabels[category]}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {items.map((skill) => (
-                  <Badge key={skill.id}>{skill.name}</Badge>
-                ))}
-              </div>
-            </Card>
-          )
-        })}
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {skillGroups.map((group, index) => (
+          <SkillCard key={group.id} group={group} index={index} />
+        ))}
       </div>
     </section>
   )

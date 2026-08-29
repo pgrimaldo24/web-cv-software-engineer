@@ -1,4 +1,4 @@
-import { About, Contact, Experience, Footer, Header, Hero, Projects, Skills } from './sections'
+import { About, Companies, Contact, Experience, Footer, Header, Hero, Projects, Skills } from './sections'
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Companies />
         <Experience />
         <Skills />
         <Projects />

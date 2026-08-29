@@ -1,8 +1,8 @@
-export type SkillCategory = 'frontend' | 'backend' | 'tools' | 'other'
+import type { LucideIcon } from 'lucide-react'
 
-export interface Skill {
+export interface SkillGroup {
   id: string
-  name: string
-  category: SkillCategory
-  level?: 1 | 2 | 3 | 4 | 5
+  category: string
+  icon: LucideIcon
+  items: string[]
 }

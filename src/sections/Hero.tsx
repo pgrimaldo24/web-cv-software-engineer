@@ -2,18 +2,19 @@ import { Button } from '../components'
 import { profile } from '../data/profile'
 
 const terminalLines = [
-  'React / TypeScript',
-  'Node.js / Express',
-  'PostgreSQL / MongoDB',
-  'Docker / CI-CD',
+  'Java / Spring Boot',
+  '[OK] C# / .NET Core',
+  '[OK] Microservices Architecture',
+  '[OK] Kafka Event Streaming',
+  '[OK] Docker / K8s'
 ]
 
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden py-24">
       <div className="pointer-events-none absolute inset-0 z-0">
-        <div className="absolute top-1/4 left-1/4 h-[500px] w-[500px] animate-pulse rounded-full bg-indigo-400/20 blur-[120px] dark:bg-indigo-500/10" />
-        <div className="absolute right-1/4 bottom-1/4 h-[600px] w-[600px] rounded-full bg-fuchsia-400/10 blur-[150px] dark:bg-fuchsia-500/10" />
+        <div className="absolute top-1/4 left-1/4 h-[500px] w-[500px] animate-pulse rounded-full bg-indigo-400/35 blur-[120px] dark:bg-indigo-500/10" />
+        <div className="absolute right-1/4 bottom-1/4 h-[600px] w-[600px] rounded-full bg-fuchsia-400/25 blur-[150px] dark:bg-fuchsia-500/10" />
       </div>
 
       <div className="relative z-10 mx-auto grid max-w-5xl grid-cols-1 items-center gap-10 px-6 lg:grid-cols-12">
@@ -79,7 +80,7 @@ export function Hero() {
               </p>
               <div className="mt-2 flex items-center gap-2 pl-4">
                 <span className="inline-block h-4 w-2 animate-pulse bg-indigo-500" />
-                <span className="text-slate-500 dark:text-slate-400">Processing experience...</span>
+                <span className="text-slate-500 dark:text-slate-400">Processing 8+ years...</span>
               </div>
             </div>
           </div>

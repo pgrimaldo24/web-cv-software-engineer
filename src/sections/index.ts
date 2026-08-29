@@ -1,6 +1,7 @@
 export { Header } from './Header'
 export { Hero } from './Hero'
 export { About } from './About'
+export { Companies } from './Companies'
 export { Experience } from './Experience'
 export { Skills } from './Skills'
 export { Projects } from './Projects'

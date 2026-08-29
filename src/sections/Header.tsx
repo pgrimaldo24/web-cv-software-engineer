@@ -21,8 +21,6 @@ export function Header() {
   const activeId = useActiveSection(sectionIds)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const displayName = profile.name.split('|')[0]?.trim() ?? profile.name
-
   function handleNavClick(event: React.MouseEvent<HTMLAnchorElement>, href: string) {
     event.preventDefault()
     document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
@@ -37,24 +35,7 @@ export function Header() {
           : 'border-b border-transparent bg-transparent'
       }`}
     >
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <div className="flex flex-col gap-1">
-          <a
-            href="#top"
-            onClick={(event) => handleNavClick(event, '#top')}
-            className="font-semibold text-slate-900 dark:text-white"
-          >
-            {displayName}
-          </a>
-          <span className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">
-            {/* <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-            </span> */}
-            Open to work
-          </span>
-        </div>
-
+      <div className="mx-auto flex max-w-5xl items-center justify-end gap-10 px-6 py-4 md:justify-center">
         <nav className="hidden gap-6 md:flex">
           {navLinks.map((link) => {
             const isActive = activeId === link.id
