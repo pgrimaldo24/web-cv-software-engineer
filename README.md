@@ -1,75 +1,71 @@
-# React + TypeScript + Vite
+# CV / Portfolio — Software Engineer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page personal de CV/portfolio construida con Vite + React + TypeScript y Tailwind CSS.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Vite](https://vite.dev/) — build tool y dev server
+- [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS v4](https://tailwindcss.com/) (`@tailwindcss/vite`, sin `tailwind.config.js`)
+- [lucide-react](https://lucide.dev/) — iconos de UI (menú, cerrar, etc.)
+- [react-icons](https://react-icons.github.io/react-icons/) — logos de marca (GitHub, LinkedIn, Stack Overflow)
+- Sin librerías de state management — solo `useState`/hooks propios
 
-## React Compiler
+## Requisitos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 18+
+- npm
 
-## Expanding the ESLint configuration
+## Empezar
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+El servidor de desarrollo queda disponible en `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Comando           | Descripción                                      |
+| ------------------ | ------------------------------------------------- |
+| `npm run dev`       | Inicia el servidor de desarrollo con HMR          |
+| `npm run build`     | Typecheck (`tsc -b`) + build de producción a `dist/` |
+| `npm run preview`   | Sirve el build de producción localmente           |
+| `npm run lint`      | Corre ESLint sobre el proyecto                    |
+
+## Arquitectura
 
 ```
+src/
+├── components/     # UI reutilizable: Button, Badge, Card, SectionTitle, ThemeToggle
+├── sections/       # Secciones de la landing: Header, Hero, About, Experience, Skills, Projects, Contact, Footer
+├── data/           # Contenido tipado: profile.ts, experience.ts, skills.ts, projects.ts
+├── types/          # Interfaces TypeScript: Experience, Skill, Project
+├── hooks/          # Hooks propios: useTheme, useScrolled, useActiveSection
+├── App.tsx         # Ensambla las secciones en orden
+└── index.css       # Entry point de Tailwind + estilos globales (fuente, scroll)
+```
+
+### Secciones
+
+`Header` (sticky, glassmorphism al hacer scroll, scroll-spy, menú mobile) → `Hero` → `About` → `Experience` → `Skills` → `Projects` → `Contact` → `Footer`.
+
+### Dark mode
+
+Se activa/desactiva agregando la clase `dark` en `<html>` (ver [useTheme.ts](src/hooks/useTheme.ts)). La preferencia se persiste en `localStorage` y respeta `prefers-color-scheme` en la primera carga.
+
+## Personalizar el contenido
+
+Toda la información del CV vive en `src/data/`, tipada contra las interfaces de `src/types/`:
+
+- **`profile.ts`** — nombre, rol, tagline, ubicación, email, y enlaces a GitHub / LinkedIn / Stack Overflow / CV.
+- **`experience.ts`** — historial laboral (`Experience[]`).
+- **`skills.ts`** — habilidades por categoría (`Skill[]`).
+- **`projects.ts`** — proyectos destacados (`Project[]`).
+
+Para actualizar tu CV, edita esos archivos — no hace falta tocar los componentes.
+
+## Tipografía
+
+El proyecto usa [Poppins](https://fonts.google.com/specimen/Poppins) como fuente global, cargada desde Google Fonts en [index.html](index.html) y configurada como `--font-sans` en [index.css](src/index.css).
