@@ -1,25 +1,27 @@
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa'
-import { DownloadCvButton, ThemeToggle } from '../components'
+import { DownloadCvButton, LanguageSwitcher, ThemeToggle } from '../components'
 import { profile } from '../data/profile'
 import { useActiveSection } from '../hooks/useActiveSection'
 import { useScrolled } from '../hooks/useScrolled'
 
-const navLinks = [
-  { label: 'Sobre mí', href: '#about', id: 'about' },
-  { label: 'Experiencia', href: '#experience', id: 'experience' },
-  { label: 'Skills', href: '#skills', id: 'skills' },
-  { label: 'Proyectos', href: '#projects', id: 'projects' },
-  { label: 'Contacto', href: '#contact', id: 'contact' },
-]
+const navLinkIds = ['about', 'experience', 'skills', 'projects', 'contact'] as const
 
-const sectionIds = ['top', ...navLinks.map((link) => link.id)]
+const sectionIds = ['top', ...navLinkIds]
 
 export function Header() {
+  const { t } = useTranslation()
   const scrolled = useScrolled(20)
   const activeId = useActiveSection(sectionIds)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const navLinks = navLinkIds.map((id) => ({
+    id,
+    href: `#${id}`,
+    label: t(`nav.${id}`),
+  }))
 
   function handleNavClick(event: React.MouseEvent<HTMLAnchorElement>, href: string) {
     event.preventDefault()
@@ -63,7 +65,7 @@ export function Header() {
             href={profile.linkedin}
             target="_blank"
             rel="noreferrer"
-            aria-label="Ir a mi perfil de LinkedIn"
+            aria-label={t('nav.goToLinkedin')}
             className="text-slate-500 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
           >
             <FaLinkedin className="h-5 w-5" aria-hidden="true" />
@@ -72,7 +74,7 @@ export function Header() {
             href={profile.github}
             target="_blank"
             rel="noreferrer"
-            aria-label="Ir a mi perfil de GitHub"
+            aria-label={t('nav.goToGithub')}
             className="text-slate-500 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
           >
             <FaGithub className="h-5 w-5" aria-hidden="true" />
@@ -81,11 +83,12 @@ export function Header() {
             href={profile.stackoverflow}
             target="_blank"
             rel="noreferrer"
-            aria-label="Ir a mi perfil de Stack Overflow"
+            aria-label={t('nav.goToStackoverflow')}
             className="text-slate-500 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
           >
             <FaStackOverflow className="h-5 w-5" aria-hidden="true" />
           </a>
+          <LanguageSwitcher />
           <ThemeToggle />
         </div>
 
@@ -94,7 +97,7 @@ export function Header() {
           <button
             type="button"
             onClick={() => setIsMenuOpen((prev) => !prev)}
-            aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+            aria-label={isMenuOpen ? t('nav.closeMenu') : t('nav.openMenu')}
             aria-expanded={isMenuOpen}
             className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition-colors hover:bg-slate-100 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
           >
@@ -131,13 +134,14 @@ export function Header() {
               </a>
             )
           })}
-          <div className="mt-2 flex items-center gap-4 border-t border-slate-200 pt-4 dark:border-slate-800">
+          <div className="mt-2 flex items-center justify-between gap-3 border-t border-slate-200 pt-4 dark:border-slate-800">
+            <LanguageSwitcher />
             <DownloadCvButton variant="primary" className="flex-1 px-4 py-2 text-xs" />
             <a
               href={profile.linkedin}
               target="_blank"
               rel="noreferrer"
-              aria-label="Ir a mi perfil de LinkedIn"
+              aria-label={t('nav.goToLinkedin')}
               className="text-slate-500 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
             >
               <FaLinkedin className="h-5 w-5" aria-hidden="true" />
@@ -146,7 +150,7 @@ export function Header() {
               href={profile.github}
               target="_blank"
               rel="noreferrer"
-              aria-label="Ir a mi perfil de GitHub"
+              aria-label={t('nav.goToGithub')}
               className="text-slate-500 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
             >
               <FaGithub className="h-5 w-5" aria-hidden="true" />
@@ -155,7 +159,7 @@ export function Header() {
               href={profile.stackoverflow}
               target="_blank"
               rel="noreferrer"
-              aria-label="Ir a mi perfil de Stack Overflow"
+              aria-label={t('nav.goToStackoverflow')}
               className="text-slate-500 transition-colors hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400"
             >
               <FaStackOverflow className="h-5 w-5" aria-hidden="true" />

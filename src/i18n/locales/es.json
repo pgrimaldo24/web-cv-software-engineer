@@ -1,0 +1,251 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Skills",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "downloadCV": "Descargar CV",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "goToLinkedin": "Ir a mi perfil de LinkedIn",
+    "goToGithub": "Ir a mi perfil de GitHub",
+    "goToStackoverflow": "Ir a mi perfil de Stack Overflow",
+    "goHome": "Ir al inicio",
+    "toggleTheme": "Cambiar tema",
+    "changeLanguage": "Cambiar idioma"
+  },
+  "hero": {
+    "badge": "Disponible para nuevas oportunidades",
+    "greeting": "Hola, soy",
+    "tagline": "Diseño y desarrollo microservicios escalables para sistemas críticos de banca, retail y telecomunicaciones.",
+    "ctaContact": "Contáctame",
+    "terminal": {
+      "initStack": "initialize_stack()",
+      "loadingDeps": "Loading dependencies...",
+      "awaitExperience": "await compile_experience()",
+      "processing": "Processing 8+ years..."
+    }
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "Un poco de mi historia",
+    "paragraph1": "Me muevo entre Java, .NET, React y Angular según lo que el proyecto necesite, pero mi foco siempre ha sido el mismo: sistemas que no pueden fallar. He trabajado en banca, retail y telecomunicaciones, sectores donde un error en producción tiene un costo real, diseñando microservicios, arquitecturas reactivas y soluciones bajo CQRS y Clean Architecture que hoy corren en producción para clientes como BCP, Oechsle y Grupo Gloria.",
+    "paragraph2": "No solo escribo código: he migrado servicios completos a arquitecturas más eficientes (Spring Boot a Quarkus, reduciendo tiempos de respuesta), implementado API Gateways desde cero para ecosistemas de microservicios, y liderado equipos técnicos bajo Scrum cuando el proyecto lo pidió. Me importa escribir código claro y tomar decisiones de arquitectura que el equipo pueda mantener sin depender de mí.",
+    "paragraph3": "Sigo sumando: terminando Ingeniería de Sistemas en la UPC, y usando Claude y Cursor como parte de mi flujo diario para acelerar el desarrollo sin sacrificar calidad.",
+    "location": "Ubicación",
+    "email": "Email"
+  },
+  "companies": {
+    "subtitle": "EMPRESAS DONDE HE APORTADO SOLUCIONES DE SOFTWARE"
+  },
+  "experience": {
+    "eyebrow": "Trayectoria",
+    "title": "Experiencia profesional",
+    "description": "Un resumen de los roles y empresas donde he trabajado.",
+    "additional": "Experiencia adicional",
+    "items": {
+      "topstrategic": {
+        "role": "Senior Full-Stack Engineer",
+        "achievements": [
+          "Diseño y desarrollo de aplicaciones end-to-end en .NET 6/8/9 y microservicios en Java (Spring Boot, Spring Cloud), con interfaces en Angular 21 y React + TypeScript para aplicaciones empresariales de Finanzas (Oechsle y Promart Homecenter).",
+          "Desarrollo y mantenimiento de APIs REST y microservicios en .NET, Java y Node.js, integrados con Oracle y Apache Kafka, desplegados en Docker/Kubernetes con gestión de Cronjobs.",
+          "Automatización de procesos con Quarkus y GraalVM, optimizando tiempos de arranque y consumo de recursos en servicios críticos.",
+          "Mensajería basada en eventos con Kafka on-premise y Pub/Sub en GCP; monitoreo con Grafana Loki y ELK.",
+          "Configuración de pipelines CI/CD en Azure DevOps, administración de clústeres AKS y Rancher.",
+          "Uso de Claude y Cursor AI para acelerar desarrollo, refactorización y documentación técnica."
+        ]
+      },
+      "evol": {
+        "role": "Senior Backend Engineer",
+        "achievements": [
+          "Desarrollo y mantenimiento de APIs REST y microservicios en Java (Spring Boot, Quarkus) y .NET, aplicando Clean Architecture y CQRS para aplicaciones financieras del Grupo Gloria.",
+          "Migración de servicios de Spring Boot a Quarkus, mejorando rendimiento y eficiencia de recursos.",
+          "Implementación de programación reactiva con Spring WebFlux y mensajería asíncrona con RabbitMQ para procesos financieros críticos.",
+          "Integración con APIs externas de bancos y proveedores de TI para sincronización de información financiera.",
+          "Automatización de procesos con Python desplegados en AWS para el proyecto \"Gloriosa\" (transmisión nacional).",
+          "Configuración de Kubernetes con HashiCorp Vault; monitoreo con ELK (Elasticsearch, Kibana).",
+          "Liderazgo de coordinación entre equipos de Infraestructura, Data, Project Managers y proveedores externos."
+        ]
+      },
+      "digitalia-tec": {
+        "role": "Senior Backend Engineer | .NET & React",
+        "achievements": [
+          "Diseño y desarrollo de APIs REST en .NET Core para el área de Contabilidad de Juntoz.com.",
+          "Desarrollo de interfaces frontend en React con TypeScript para módulos contables.",
+          "Implementación de CQRS mediante comandos, consultas y Mediator.",
+          "Aplicación de patrones de diseño en el sistema MerchantCentral.",
+          "Configuración de pipelines CI/CD en Azure DevOps."
+        ]
+      },
+      "casino-atlantic-city": {
+        "role": "System Senior Specialist",
+        "achievements": [
+          "Diseño e implementación de API Gateway con Kong Enterprise para ecosistema de microservicios del casino online.",
+          "Desarrollo de microservicios en Java (Spring Boot, Spring Cloud, Hibernate) y APIs REST en .NET.",
+          "Creación de la app \"Finanzas Atlantic\" con procesos ETL desde SAP y SQL Server.",
+          "Logging centralizado con Kibana/Elasticsearch sobre clúster Kubernetes.",
+          "Coordinación de equipo de 4 personas bajo Scrum."
+        ]
+      },
+      "ntt-data": {
+        "role": "Fullstack Developer",
+        "achievements": [
+          "Desarrollo de la aplicación CVT para la tribu ARPAY en BCP (registro e inventario de tecnologías).",
+          "Desarrollo en MVC ASP.NET con integración de CI/CD en Jenkins.",
+          "Documentación técnica y soporte en tiempo real a equipos de la tribu."
+        ]
+      },
+      "experis": {
+        "role": "Fullstack .NET y Angular",
+        "achievements": [
+          "Mantenimiento de aplicaciones Angular 11 y .NET Core/EF para Ferreyros, CI/CD en Azure DevOps."
+        ]
+      },
+      "xternal": {
+        "role": "Java, Kotlin, .NET, Angular",
+        "achievements": [
+          "Liderazgo de apps Calidda GNV y Actualización de Datos; microservicios Java/Spring Boot/WebFlux; apps móviles Kotlin/Swift."
+        ]
+      },
+      "sigcomt": {
+        "role": "Backend Developer .NET",
+        "achievements": [
+          "Módulos de evaluación crediticia y servicios SOAP/REST para Compartamos Financiera."
+        ]
+      },
+      "everis": {
+        "role": "Junior Software Developer .NET",
+        "achievements": [
+          "ASP.NET Web Forms, Xamarin y Telerik para BBVA, Entel y Pacífico."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Habilidades",
+    "title": "Tecnologías con las que trabajo",
+    "description": "Stack organizado por área, de lo que uso a diario a las herramientas que complementan mi flujo de trabajo.",
+    "groups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "architecture": "Arquitectura & Patrones",
+      "databases": "Bases de Datos",
+      "cloud-devops": "Cloud & DevOps",
+      "messaging": "Mensajería & Integración",
+      "observability": "Observabilidad & Calidad",
+      "ai-tools": "Herramientas de IA"
+    },
+    "items": {
+      "Microservicios": "Microservicios",
+      "Programación Reactiva": "Programación Reactiva"
+    }
+  },
+  "projects": {
+    "eyebrow": "Proyectos",
+    "title": "Trabajo destacado",
+    "description": "Una selección de proyectos personales y profesionales.",
+    "showDetails": "Ver detalles",
+    "hideDetails": "Ocultar detalles",
+    "viewRepo": "Ver repositorio",
+    "moreCount": "+{{count}} más",
+    "items": {
+      "fund-transfer-engine": {
+        "category": "Backend / Microservicios",
+        "description": "Ecosistema de 2 microservicios en Java que orquesta transferencias de fondos aplicando el patrón Saga (coreografía orquestada), con compensación automática ante fallos.",
+        "highlights": [
+          "Patrón Saga orquestado con máquina de estados (PENDING → RESERVED → COMPLETED / CANCELLED_COMPENSATED / FAILED).",
+          "Comunicación interna vía gRPC entre transaction-orchestrator-service (gateway externo) y account-ledger-service (core contable, cerrado al exterior).",
+          "Compensación automática (rollback) ante fallos simulados en la confirmación, liberando fondos reservados.",
+          "Uso combinado de Hilos Virtuales (Java 21) en el orquestador y programación reactiva (Mutiny) en el ledger, cada uno justificado según el tipo de contención.",
+          "Resiliencia con Circuit Breaker, Retry con backoff/jitter y Bulkhead configurados de forma diferenciada por operación.",
+          "Streaming de eventos en tiempo real vía Server-Sent Events (SSE).",
+          "Trazabilidad distribuida entre microservicios con propagación de traceId.",
+          "Despliegue en Kubernetes con manifiestos incluidos (Deployment + Service + health probes)."
+        ]
+      },
+      "agile-flow-board": {
+        "category": "Fullstack",
+        "description": "Sistema de gestión de proyectos bajo esquema Scrum, con administración de tareas y tableros Kanban en tiempo real.",
+        "highlights": [
+          "Tableros Kanban con drag & drop usando Angular CDK.",
+          "Actualizaciones en tiempo real vía SignalR (movimiento de tareas, notificaciones).",
+          "Arquitectura Hexagonal en el backend (Domain, Application, Infrastructure, Api).",
+          "Autenticación JWT con hash de contraseñas PBKDF2 (salt + pepper).",
+          "Generación de reportes en PDF (QuestPDF) y Excel (ClosedXML).",
+          "Despliegue containerizado con Docker Compose."
+        ]
+      },
+      "grupo-ciencias": {
+        "category": "Fullstack",
+        "description": "Plataforma integral para una academia pre-universitaria: landing page institucional, intranet de gestión y biblioteca virtual de contenido educativo con experiencia tipo Netflix.",
+        "highlights": [
+          "Landing page institucional para captación de alumnos.",
+          "Módulo de intranet para gestión académica/administrativa.",
+          "Biblioteca virtual con interfaz tipo streaming (catálogo de clases/contenido en video).",
+          "Integración frontend en React con backend en .NET."
+        ]
+      }
+    },
+    "repos": {
+      "Orquestador": "Orquestador",
+      "Ledger": "Ledger"
+    }
+  },
+  "education": {
+    "eyebrow": "Formación",
+    "title": "Educación y Certificaciones",
+    "description": "Formación académica en curso y certificaciones que respaldan mi especialización en arquitectura, seguridad y buenas prácticas.",
+    "degree": "Ingeniería de Sistemas",
+    "institution": "Universidad Peruana de Ciencias Aplicadas (UPC)",
+    "detail": "Programa EPE (8vo ciclo)",
+    "status": "En curso",
+    "groups": {
+      "architecture": "Arquitectura & Microservicios",
+      "security": "Seguridad",
+      "best-practices": "Buenas Prácticas & Patrones",
+      "devops": "DevOps & Herramientas",
+      "fullstack-dotnet": "Frontend & Backend (.NET)",
+      "methodologies": "Metodologías"
+    },
+    "items": {
+      "architecture": {
+        "0": "Spring Boot & Spring WebFlux: Programación Reactiva RESTful",
+        "1": "Quarkus: Desarrollo Ágil de Microservicios, GraphQL y GraalVM",
+        "2": "Microservicios con Spring Cloud y Spring Boot",
+        "3": "Java Microservices: CQRS and Event Sourcing with Kafka",
+        "4": "Clean Architecture: Microservicios con .NET 6 y RabbitMQ",
+        "5": "Starting with Quarkus"
+      },
+      "security": {
+        "0": "Web Security: Injection Attacks with Java and Spring Boot",
+        "1": "Microservices Security",
+        "2": "Mastering the Security Code Review"
+      },
+      "best-practices": {
+        "0": "Complete Java Design Patterns masterclass",
+        "1": "Programación funcional en Java con Lambdas y Streams",
+        "2": "Clean Code"
+      },
+      "devops": {
+        "0": "Azure DevOps Fundamentals for Beginners",
+        "1": "Git: experto (GitHub y GitLab)"
+      },
+      "fullstack-dotnet": {
+        "0": "ASP.NET Core Web Application (POO, SOLID, MVC, EF Core, Bootstrap, jQuery)",
+        "1": "Web Application Angular 11",
+        "2": "REST Services .NET 5"
+      },
+      "methodologies": {
+        "0": "Scrum Fundamentals Certified"
+      }
+    }
+  },
+  "contact": {
+    "title": "Hablemos",
+    "description": "¿Tienes un proyecto interesante o una oportunidad laboral? Estoy abierto a nuevos retos, escríbeme y conversemos."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

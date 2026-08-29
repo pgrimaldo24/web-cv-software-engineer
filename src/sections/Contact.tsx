@@ -1,14 +1,16 @@
+import { useTranslation } from 'react-i18next'
 import { Button, SectionTitle } from '../components'
 import { profile } from '../data/profile'
 
 export function Contact() {
+  const { t } = useTranslation()
   return (
     <section id="contact" className="mx-auto max-w-5xl px-6 py-20">
       <SectionTitle
         align="center"
-        eyebrow="Contacto"
-        title="Hablemos"
-        description="¿Tienes un proyecto interesante o una oportunidad laboral? Estoy abierto a nuevos retos, escríbeme y conversemos."
+        eyebrow={t('nav.contact')}
+        title={t('contact.title')}
+        description={t('contact.description')}
       />
       <div className="flex flex-col items-center gap-4">
         <Button variant="primary" onClick={() => (window.location.href = `mailto:${profile.email}`)}>

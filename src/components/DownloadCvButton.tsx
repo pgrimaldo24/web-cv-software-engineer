@@ -1,4 +1,5 @@
 import type { AnchorHTMLAttributes } from 'react'
+import { useTranslation } from 'react-i18next'
 import cvFile from '../assets/docs/CV_Pierr_Grimaldo_Vidalon.pdf'
 
 type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'outline'
@@ -23,6 +24,7 @@ export function DownloadCvButton({
   className = '',
   ...props
 }: DownloadCvButtonProps) {
+  const { t } = useTranslation()
   return (
     <a
       href={cvFile}
@@ -32,7 +34,7 @@ export function DownloadCvButton({
       className={`inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950 ${variantClasses[variant]} ${className}`}
       {...props}
     >
-      Descargar CV
+      {t('nav.downloadCV')}
     </a>
   )
 }

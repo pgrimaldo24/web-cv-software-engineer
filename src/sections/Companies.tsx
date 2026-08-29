@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { companies } from '../data/companies'
 import type { Company } from '../types'
 
@@ -77,6 +78,7 @@ function MarqueeTrack() {
 }
 
 export function Companies() {
+  const { t } = useTranslation()
   return (
     <section className="relative overflow-hidden border-y border-slate-200 bg-gradient-to-b from-indigo-50/60 via-white to-white py-16 dark:border-slate-800 dark:from-indigo-500/5 dark:via-slate-950 dark:to-slate-950">
       <div className="pointer-events-none absolute inset-0 z-0">
@@ -84,7 +86,7 @@ export function Companies() {
       </div>
 
       <p className="relative z-10 mb-10 text-center font-sans text-sm font-semibold tracking-[0.2em] text-indigo-600/80 uppercase dark:text-indigo-400/80">
-        EMPRESAS DONDE HE APORTADO SOLUCIONES DE SOFTWARE
+        {t('companies.subtitle')}
       </p>
 
       <div

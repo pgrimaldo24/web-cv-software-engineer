@@ -1,5 +1,6 @@
 import { ChevronDown, GraduationCap } from 'lucide-react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Badge, Card, SectionTitle } from '../components'
 import { certificationGroups } from '../data/certifications'
 import { education } from '../data/education'
@@ -7,6 +8,7 @@ import { useInView } from '../hooks/useInView'
 import type { CertificationGroup } from '../types'
 
 function EducationCard() {
+  const { t } = useTranslation()
   const { ref, isInView } = useInView<HTMLDivElement>()
 
   return (
@@ -23,16 +25,16 @@ function EducationCard() {
           </span>
           <div>
             <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
-              {education.degree}
+              {t('education.degree')}
             </h3>
             <p className="text-sm font-medium text-indigo-600 dark:text-indigo-400">
               {education.institution}
             </p>
-            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{education.detail}</p>
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{t('education.detail')}</p>
           </div>
         </div>
         <Badge className="w-fit shrink-0 border-amber-300 bg-amber-50 text-amber-700 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-400">
-          {education.status}
+          {t('education.status')}
         </Badge>
       </div>
     </Card>
@@ -40,6 +42,7 @@ function EducationCard() {
 }
 
 function CertificationGroupCard({ group, index }: { group: CertificationGroup; index: number }) {
+  const { t } = useTranslation()
   const { ref, isInView } = useInView<HTMLDivElement>()
   const [isOpen, setIsOpen] = useState(false)
   const Icon = group.icon
@@ -54,14 +57,14 @@ function CertificationGroupCard({ group, index }: { group: CertificationGroup; i
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
         aria-expanded={isOpen}
-        className="flex w-full items-center justify-between gap-3 p-6 text-left"
+        className="flex w-full cursor-pointer items-center justify-between gap-3 p-6 text-left"
       >
         <div className="flex items-center gap-3">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-400">
             <Icon className="h-5 w-5" aria-hidden="true" />
           </span>
           <h3 className="text-sm font-semibold text-slate-900 dark:text-white">
-            {group.category}
+            {t(`education.groups.${group.id}`)}
           </h3>
         </div>
         <ChevronDown
@@ -78,10 +81,12 @@ function CertificationGroupCard({ group, index }: { group: CertificationGroup; i
         }`}
       >
         <ul className="space-y-3 px-6 pb-6">
-          {group.items.map((item) => (
+          {group.items.map((item, itemIndex) => (
             <li key={item.name} className="flex items-start justify-between gap-3 text-sm">
               <div>
-                <p className="font-medium text-slate-700 dark:text-slate-300">{item.name}</p>
+                <p className="font-medium text-slate-700 dark:text-slate-300">
+                  {t(`education.items.${group.id}.${itemIndex}`, { defaultValue: item.name })}
+                </p>
                 {item.institution && (
                   <p className="text-xs text-slate-500 dark:text-slate-400">{item.institution}</p>
                 )}
@@ -96,12 +101,13 @@ function CertificationGroupCard({ group, index }: { group: CertificationGroup; i
 }
 
 export function Education() {
+  const { t } = useTranslation()
   return (
     <section id="education" className="mx-auto max-w-5xl px-6 py-20">
       <SectionTitle
-        eyebrow="Formación"
-        title="Educación y Certificaciones"
-        description="Formación académica en curso y certificaciones que respaldan mi especialización en arquitectura, seguridad y buenas prácticas."
+        eyebrow={t('education.eyebrow')}
+        title={t('education.title')}
+        description={t('education.description')}
       />
 
       <EducationCard />

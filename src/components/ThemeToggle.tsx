@@ -1,14 +1,16 @@
+import { useTranslation } from 'react-i18next'
 import { useTheme } from '../hooks/useTheme'
 
 export function ThemeToggle() {
+  const { t } = useTranslation()
   const { theme, toggleTheme } = useTheme()
 
   return (
     <button
       type="button"
       onClick={toggleTheme}
-      aria-label="Cambiar tema"
-      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition-colors hover:bg-slate-100 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
+      aria-label={t('nav.toggleTheme')}
+      className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-slate-200 text-slate-700 transition-colors hover:bg-slate-100 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
     >
       {theme === 'dark' ? (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">

@@ -4,7 +4,6 @@ export const experience: Experience[] = [
   {
     id: 'topstrategic',
     company: 'TOPStrategic',
-    role: 'Senior Full-Stack Engineer',
     period: 'Oct 2023 – Jun 2026',
     stack: [
       '.NET 6/8/9',
@@ -19,19 +18,10 @@ export const experience: Experience[] = [
       'Kafka',
       'Azure DevOps',
     ],
-    achievements: [
-      'Diseño y desarrollo de aplicaciones end-to-end en .NET 6/8/9 y microservicios en Java (Spring Boot, Spring Cloud), con interfaces en Angular 21 y React + TypeScript para aplicaciones empresariales de Finanzas (Oechsle y Promart Homecenter).',
-      'Desarrollo y mantenimiento de APIs REST y microservicios en .NET, Java y Node.js, integrados con Oracle y Apache Kafka, desplegados en Docker/Kubernetes con gestión de Cronjobs.',
-      'Automatización de procesos con Quarkus y GraalVM, optimizando tiempos de arranque y consumo de recursos en servicios críticos.',
-      'Mensajería basada en eventos con Kafka on-premise y Pub/Sub en GCP; monitoreo con Grafana Loki y ELK.',
-      'Configuración de pipelines CI/CD en Azure DevOps, administración de clústeres AKS y Rancher.',
-      'Uso de Claude y Cursor AI para acelerar desarrollo, refactorización y documentación técnica.',
-    ],
   },
   {
     id: 'evol',
     company: 'EVOL – Centro S.A. (Grupo Gloria)',
-    role: 'Senior Backend Engineer',
     period: 'Ene 2024 – Jun 2025',
     stack: [
       'Java 11',
@@ -45,94 +35,47 @@ export const experience: Experience[] = [
       'Python',
       'AWS',
     ],
-    achievements: [
-      'Desarrollo y mantenimiento de APIs REST y microservicios en Java (Spring Boot, Quarkus) y .NET, aplicando Clean Architecture y CQRS para aplicaciones financieras del Grupo Gloria.',
-      'Migración de servicios de Spring Boot a Quarkus, mejorando rendimiento y eficiencia de recursos.',
-      'Implementación de programación reactiva con Spring WebFlux y mensajería asíncrona con RabbitMQ para procesos financieros críticos.',
-      'Integración con APIs externas de bancos y proveedores de TI para sincronización de información financiera.',
-      'Automatización de procesos con Python desplegados en AWS para el proyecto "Gloriosa" (transmisión nacional).',
-      'Configuración de Kubernetes con HashiCorp Vault; monitoreo con ELK (Elasticsearch, Kibana).',
-      'Liderazgo de coordinación entre equipos de Infraestructura, Data, Project Managers y proveedores externos.',
-    ],
   },
   {
     id: 'digitalia-tec',
     company: 'Digitalia Tec',
-    role: 'Senior Backend Engineer | .NET & React',
     period: 'Feb 2023 – Nov 2023',
     stack: ['.NET Core', 'React', 'TypeScript', 'CQRS', 'Mediator', 'Azure DevOps'],
-    achievements: [
-      'Diseño y desarrollo de APIs REST en .NET Core para el área de Contabilidad de Juntoz.com.',
-      'Desarrollo de interfaces frontend en React con TypeScript para módulos contables.',
-      'Implementación de CQRS mediante comandos, consultas y Mediator.',
-      'Aplicación de patrones de diseño en el sistema MerchantCentral.',
-      'Configuración de pipelines CI/CD en Azure DevOps.',
-    ],
   },
   {
     id: 'casino-atlantic-city',
     company: 'Casino Atlantic City & Sport',
-    role: 'System Senior Specialist',
     period: 'Jul 2022 – Dic 2022',
     stack: ['Java 11', 'Spring Boot', 'Spring Cloud', '.NET Core/5/6', 'Kong Enterprise', 'SQL Server', 'Kubernetes'],
-    achievements: [
-      'Diseño e implementación de API Gateway con Kong Enterprise para ecosistema de microservicios del casino online.',
-      'Desarrollo de microservicios en Java (Spring Boot, Spring Cloud, Hibernate) y APIs REST en .NET.',
-      'Creación de la app "Finanzas Atlantic" con procesos ETL desde SAP y SQL Server.',
-      'Logging centralizado con Kibana/Elasticsearch sobre clúster Kubernetes.',
-      'Coordinación de equipo de 4 personas bajo Scrum.',
-    ],
   },
   {
     id: 'ntt-data',
     company: 'NTT Data Perú',
-    role: 'Fullstack Developer',
     period: 'Oct 2021 – Jul 2022',
     stack: ['.NET', 'ASP.NET MVC', 'Jenkins', 'Bitbucket'],
-    achievements: [
-      'Desarrollo de la aplicación CVT para la tribu ARPAY en BCP (registro e inventario de tecnologías).',
-      'Desarrollo en MVC ASP.NET con integración de CI/CD en Jenkins.',
-      'Documentación técnica y soporte en tiempo real a equipos de la tribu.',
-    ],
   },
   {
     id: 'experis',
     company: 'Experis',
-    role: 'Fullstack .NET y Angular',
     period: 'Jun 2021 – Sep 2021',
     stack: ['Angular 11', '.NET Core', 'Entity Framework', 'Azure DevOps'],
-    achievements: [
-      'Mantenimiento de aplicaciones Angular 11 y .NET Core/EF para Ferreyros, CI/CD en Azure DevOps.',
-    ],
   },
   {
     id: 'xternal',
     company: 'Xternal Technological',
-    role: 'Java, Kotlin, .NET, Angular',
     period: 'Oct 2020 – Jun 2021',
     stack: ['Java', 'Spring Boot', 'Spring WebFlux', 'Kotlin', 'Swift', '.NET', 'Angular'],
-    achievements: [
-      'Liderazgo de apps Calidda GNV y Actualización de Datos; microservicios Java/Spring Boot/WebFlux; apps móviles Kotlin/Swift.',
-    ],
   },
   {
     id: 'sigcomt',
     company: 'Sigcomt',
-    role: 'Backend Developer .NET',
     period: 'Feb 2020 – Jun 2020',
     stack: ['.NET', 'SOAP', 'REST'],
-    achievements: [
-      'Módulos de evaluación crediticia y servicios SOAP/REST para Compartamos Financiera.',
-    ],
   },
   {
     id: 'everis',
     company: 'Everis Perú',
-    role: 'Junior Software Developer .NET',
     period: 'Dic 2017 – Dic 2019',
     stack: ['ASP.NET Web Forms', 'Xamarin', 'Telerik'],
-    achievements: [
-      'ASP.NET Web Forms, Xamarin y Telerik para BBVA, Entel y Pacífico.',
-    ],
   },
 ]

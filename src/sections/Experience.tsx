@@ -1,5 +1,6 @@
 import { ChevronDown } from 'lucide-react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Badge, Card, SectionTitle } from '../components'
 import { experience } from '../data/experience'
 import type { Experience as ExperienceItem } from '../types'
@@ -7,11 +8,16 @@ import type { Experience as ExperienceItem } from '../types'
 const FEATURED_COUNT = 5
 
 function ExperienceCard({ item }: { item: ExperienceItem }) {
+  const { t } = useTranslation()
+  const achievements = t(`experience.items.${item.id}.achievements`, { returnObjects: true }) as string[]
+
   return (
     <Card>
       <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-start">
         <div>
-          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{item.role}</h3>
+          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+            {t(`experience.items.${item.id}.role`)}
+          </h3>
           <p className="text-sm font-medium text-indigo-600 dark:text-indigo-400">
             {item.company}
           </p>
@@ -20,7 +26,7 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
       </div>
 
       <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-slate-600 dark:text-slate-400">
-        {item.achievements.map((achievement) => (
+        {achievements.map((achievement) => (
           <li key={achievement}>{achievement}</li>
         ))}
       </ul>
@@ -35,7 +41,9 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
 }
 
 function CompactExperienceItem({ item }: { item: ExperienceItem }) {
+  const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
+  const achievements = t(`experience.items.${item.id}.achievements`, { returnObjects: true }) as string[]
 
   return (
     <div className="rounded-xl border border-slate-200 dark:border-slate-800">
@@ -43,10 +51,12 @@ function CompactExperienceItem({ item }: { item: ExperienceItem }) {
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
         aria-expanded={isOpen}
-        className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
+        className="flex w-full cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left"
       >
         <div>
-          <h3 className="text-sm font-semibold text-slate-900 dark:text-white">{item.role}</h3>
+          <h3 className="text-sm font-semibold text-slate-900 dark:text-white">
+            {t(`experience.items.${item.id}.role`)}
+          </h3>
           <p className="text-sm text-indigo-600 dark:text-indigo-400">{item.company}</p>
         </div>
         <div className="flex shrink-0 items-center gap-3">
@@ -65,7 +75,7 @@ function CompactExperienceItem({ item }: { item: ExperienceItem }) {
       >
         <div className="px-5 pb-5">
           <ul className="list-inside list-disc space-y-1 text-sm text-slate-600 dark:text-slate-400">
-            {item.achievements.map((achievement) => (
+            {achievements.map((achievement) => (
               <li key={achievement}>{achievement}</li>
             ))}
           </ul>
@@ -81,15 +91,16 @@ function CompactExperienceItem({ item }: { item: ExperienceItem }) {
 }
 
 export function Experience() {
+  const { t } = useTranslation()
   const featured = experience.slice(0, FEATURED_COUNT)
   const rest = experience.slice(FEATURED_COUNT)
 
   return (
     <section id="experience" className="mx-auto max-w-5xl px-6 py-20">
       <SectionTitle
-        eyebrow="Trayectoria"
-        title="Experiencia profesional"
-        description="Un resumen de los roles y empresas donde he trabajado."
+        eyebrow={t('experience.eyebrow')}
+        title={t('experience.title')}
+        description={t('experience.description')}
       />
 
       <div className="space-y-6">
@@ -101,7 +112,7 @@ export function Experience() {
       {rest.length > 0 && (
         <div className="mt-10">
           <h3 className="mb-4 text-sm font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400">
-            Experiencia adicional
+            {t('experience.additional')}
           </h3>
           <div className="space-y-3">
             {rest.map((item) => (

@@ -1,0 +1,251 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "downloadCV": "Download CV",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "goToLinkedin": "Go to my LinkedIn profile",
+    "goToGithub": "Go to my GitHub profile",
+    "goToStackoverflow": "Go to my Stack Overflow profile",
+    "goHome": "Go to home",
+    "toggleTheme": "Toggle theme",
+    "changeLanguage": "Change language"
+  },
+  "hero": {
+    "badge": "Available for new opportunities",
+    "greeting": "Hi, I'm",
+    "tagline": "I design and build scalable microservices for critical banking, retail and telecom systems.",
+    "ctaContact": "Contact me",
+    "terminal": {
+      "initStack": "initialize_stack()",
+      "loadingDeps": "Loading dependencies...",
+      "awaitExperience": "await compile_experience()",
+      "processing": "Processing 8+ years..."
+    }
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "A bit of my story",
+    "paragraph1": "I move between Java, .NET, React and Angular depending on what the project needs, but my focus has always been the same: systems that can't fail. I've worked in banking, retail and telecommunications, industries where a production error carries a real cost, designing microservices, reactive architectures and solutions built on CQRS and Clean Architecture that run in production today for clients like BCP, Oechsle and Grupo Gloria.",
+    "paragraph2": "I don't just write code: I've migrated entire services to more efficient architectures (Spring Boot to Quarkus, cutting response times), built API Gateways from scratch for microservices ecosystems, and led technical teams under Scrum when the project called for it. What matters to me is writing clear code and making architecture decisions the team can maintain without depending on me.",
+    "paragraph3": "I keep growing: finishing my Systems Engineering degree at UPC, and using Claude and Cursor as part of my daily workflow to speed up development without sacrificing quality.",
+    "location": "Location",
+    "email": "Email"
+  },
+  "companies": {
+    "subtitle": "COMPANIES WHERE I'VE DELIVERED SOFTWARE SOLUTIONS"
+  },
+  "experience": {
+    "eyebrow": "Track record",
+    "title": "Professional experience",
+    "description": "A summary of the roles and companies I've worked with.",
+    "additional": "Additional experience",
+    "items": {
+      "topstrategic": {
+        "role": "Senior Full-Stack Engineer",
+        "achievements": [
+          "Designed and built end-to-end applications in .NET 6/8/9 and microservices in Java (Spring Boot, Spring Cloud), with interfaces in Angular 21 and React + TypeScript for enterprise Finance applications (Oechsle and Promart Homecenter).",
+          "Developed and maintained REST APIs and microservices in .NET, Java and Node.js, integrated with Oracle and Apache Kafka, deployed on Docker/Kubernetes with Cronjob management.",
+          "Automated processes with Quarkus and GraalVM, optimizing startup times and resource usage in critical services.",
+          "Event-driven messaging with on-premise Kafka and Pub/Sub on GCP; monitoring with Grafana Loki and ELK.",
+          "Configured CI/CD pipelines in Azure DevOps, managed AKS and Rancher clusters.",
+          "Used Claude and Cursor AI to speed up development, refactoring and technical documentation."
+        ]
+      },
+      "evol": {
+        "role": "Senior Backend Engineer",
+        "achievements": [
+          "Developed and maintained REST APIs and microservices in Java (Spring Boot, Quarkus) and .NET, applying Clean Architecture and CQRS for Grupo Gloria's financial applications.",
+          "Migrated services from Spring Boot to Quarkus, improving performance and resource efficiency.",
+          "Implemented reactive programming with Spring WebFlux and asynchronous messaging with RabbitMQ for critical financial processes.",
+          "Integrated with external bank and IT provider APIs to synchronize financial information.",
+          "Automated processes with Python deployed on AWS for the \"Gloriosa\" project (nationwide broadcast).",
+          "Configured Kubernetes with HashiCorp Vault; monitoring with ELK (Elasticsearch, Kibana).",
+          "Led coordination across Infrastructure, Data, Project Management and external vendor teams."
+        ]
+      },
+      "digitalia-tec": {
+        "role": "Senior Backend Engineer | .NET & React",
+        "achievements": [
+          "Designed and built REST APIs in .NET Core for Juntoz.com's Accounting department.",
+          "Built frontend interfaces in React with TypeScript for accounting modules.",
+          "Implemented CQRS through commands, queries and Mediator.",
+          "Applied design patterns across the MerchantCentral system.",
+          "Configured CI/CD pipelines in Azure DevOps."
+        ]
+      },
+      "casino-atlantic-city": {
+        "role": "System Senior Specialist",
+        "achievements": [
+          "Designed and implemented an API Gateway with Kong Enterprise for the online casino's microservices ecosystem.",
+          "Built microservices in Java (Spring Boot, Spring Cloud, Hibernate) and REST APIs in .NET.",
+          "Created the \"Finanzas Atlantic\" app with ETL processes from SAP and SQL Server.",
+          "Centralized logging with Kibana/Elasticsearch on a Kubernetes cluster.",
+          "Coordinated a 4-person team under Scrum."
+        ]
+      },
+      "ntt-data": {
+        "role": "Fullstack Developer",
+        "achievements": [
+          "Built the CVT application for the ARPAY tribe at BCP (technology registry and inventory).",
+          "Developed in ASP.NET MVC with CI/CD integration in Jenkins.",
+          "Technical documentation and real-time support for tribe teams."
+        ]
+      },
+      "experis": {
+        "role": "Fullstack .NET and Angular",
+        "achievements": [
+          "Maintained Angular 11 and .NET Core/EF applications for Ferreyros, with CI/CD in Azure DevOps."
+        ]
+      },
+      "xternal": {
+        "role": "Java, Kotlin, .NET, Angular",
+        "achievements": [
+          "Led the Calidda GNV and Data Update apps; Java/Spring Boot/WebFlux microservices; Kotlin/Swift mobile apps."
+        ]
+      },
+      "sigcomt": {
+        "role": "Backend Developer .NET",
+        "achievements": [
+          "Credit evaluation modules and SOAP/REST services for Compartamos Financiera."
+        ]
+      },
+      "everis": {
+        "role": "Junior Software Developer .NET",
+        "achievements": [
+          "ASP.NET Web Forms, Xamarin and Telerik for BBVA, Entel and Pacífico."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "Technologies I work with",
+    "description": "Stack organized by area, from what I use daily to the tools that complement my workflow.",
+    "groups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "architecture": "Architecture & Patterns",
+      "databases": "Databases",
+      "cloud-devops": "Cloud & DevOps",
+      "messaging": "Messaging & Integration",
+      "observability": "Observability & Quality",
+      "ai-tools": "AI Tools"
+    },
+    "items": {
+      "Microservicios": "Microservices",
+      "Programación Reactiva": "Reactive Programming"
+    }
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Featured work",
+    "description": "A selection of personal and professional projects.",
+    "showDetails": "Show details",
+    "hideDetails": "Hide details",
+    "viewRepo": "View repository",
+    "moreCount": "+{{count}} more",
+    "items": {
+      "fund-transfer-engine": {
+        "category": "Backend / Microservices",
+        "description": "A 2-microservice Java ecosystem that orchestrates fund transfers using the Saga pattern (orchestrated choreography), with automatic compensation on failure.",
+        "highlights": [
+          "Orchestrated Saga pattern with a state machine (PENDING → RESERVED → COMPLETED / CANCELLED_COMPENSATED / FAILED).",
+          "Internal communication via gRPC between transaction-orchestrator-service (external gateway) and account-ledger-service (accounting core, closed to the outside).",
+          "Automatic compensation (rollback) on simulated confirmation failures, releasing reserved funds.",
+          "Combined use of Virtual Threads (Java 21) in the orchestrator and reactive programming (Mutiny) in the ledger, each justified by its contention profile.",
+          "Resilience via Circuit Breaker, Retry with backoff/jitter and Bulkhead, configured differently per operation.",
+          "Real-time event streaming via Server-Sent Events (SSE).",
+          "Distributed tracing across microservices with traceId propagation.",
+          "Kubernetes deployment with included manifests (Deployment + Service + health probes)."
+        ]
+      },
+      "agile-flow-board": {
+        "category": "Fullstack",
+        "description": "A Scrum-based project management system with task administration and real-time Kanban boards.",
+        "highlights": [
+          "Kanban boards with drag & drop using Angular CDK.",
+          "Real-time updates via SignalR (task movement, notifications).",
+          "Hexagonal Architecture on the backend (Domain, Application, Infrastructure, Api).",
+          "JWT authentication with PBKDF2 password hashing (salt + pepper).",
+          "PDF (QuestPDF) and Excel (ClosedXML) report generation.",
+          "Containerized deployment with Docker Compose."
+        ]
+      },
+      "grupo-ciencias": {
+        "category": "Fullstack",
+        "description": "A full platform for a pre-university academy: institutional landing page, management intranet and a Netflix-style virtual library of educational content.",
+        "highlights": [
+          "Institutional landing page for student acquisition.",
+          "Intranet module for academic/administrative management.",
+          "Virtual library with a streaming-style interface (video class/content catalog).",
+          "React frontend integrated with a .NET backend."
+        ]
+      }
+    },
+    "repos": {
+      "Orquestador": "Orchestrator",
+      "Ledger": "Ledger"
+    }
+  },
+  "education": {
+    "eyebrow": "Education",
+    "title": "Education & Certifications",
+    "description": "Ongoing academic training and certifications backing my specialization in architecture, security and best practices.",
+    "degree": "Systems Engineering",
+    "institution": "Universidad Peruana de Ciencias Aplicadas (UPC)",
+    "detail": "EPE Program (8th semester)",
+    "status": "In progress",
+    "groups": {
+      "architecture": "Architecture & Microservices",
+      "security": "Security",
+      "best-practices": "Best Practices & Patterns",
+      "devops": "DevOps & Tools",
+      "fullstack-dotnet": "Frontend & Backend (.NET)",
+      "methodologies": "Methodologies"
+    },
+    "items": {
+      "architecture": {
+        "0": "Spring Boot & Spring WebFlux: Reactive RESTful Programming",
+        "1": "Quarkus: Agile Microservices Development, GraphQL and GraalVM",
+        "2": "Microservices with Spring Cloud and Spring Boot",
+        "3": "Java Microservices: CQRS and Event Sourcing with Kafka",
+        "4": "Clean Architecture: Microservices with .NET 6 and RabbitMQ",
+        "5": "Starting with Quarkus"
+      },
+      "security": {
+        "0": "Web Security: Injection Attacks with Java and Spring Boot",
+        "1": "Microservices Security",
+        "2": "Mastering the Security Code Review"
+      },
+      "best-practices": {
+        "0": "Complete Java Design Patterns masterclass",
+        "1": "Functional Programming in Java with Lambdas and Streams",
+        "2": "Clean Code"
+      },
+      "devops": {
+        "0": "Azure DevOps Fundamentals for Beginners",
+        "1": "Git: Expert (GitHub and GitLab)"
+      },
+      "fullstack-dotnet": {
+        "0": "ASP.NET Core Web Application (OOP, SOLID, MVC, EF Core, Bootstrap, jQuery)",
+        "1": "Web Application Angular 11",
+        "2": "REST Services .NET 5"
+      },
+      "methodologies": {
+        "0": "Scrum Fundamentals Certified"
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's talk",
+    "description": "Have an interesting project or a job opportunity? I'm open to new challenges, reach out and let's talk."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

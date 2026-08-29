@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { Button, DownloadCvButton } from '../components'
 import { profile } from '../data/profile'
 
@@ -10,6 +11,7 @@ const terminalLines = [
 ]
 
 export function Hero() {
+  const { t } = useTranslation()
   return (
     <section id="top" className="relative overflow-hidden py-24">
       <div className="pointer-events-none absolute inset-0 z-0">
@@ -22,12 +24,12 @@ export function Hero() {
           <div className="inline-flex w-fit items-center gap-2 rounded-full border border-slate-200 bg-slate-50/60 px-4 py-2 backdrop-blur-xl dark:border-white/10 dark:bg-slate-800/50">
             {/* <span className="h-2 w-2 animate-ping rounded-full bg-indigo-500" /> */}
             <span className="text-xs font-medium tracking-widest text-slate-600 uppercase dark:text-slate-400">
-              Disponible para nuevas oportunidades
+              {t('hero.badge')}
             </span>
           </div>
 
           <h1 className="text-4xl leading-tight font-bold tracking-tight text-slate-900 sm:text-5xl md:text-6xl dark:text-white">
-            Hola, soy
+            {t('hero.greeting')}
             <br />
             <span className="bg-gradient-to-r from-indigo-600 to-fuchsia-500 bg-clip-text text-transparent dark:from-indigo-400 dark:to-fuchsia-400">
               {profile.name}
@@ -39,12 +41,12 @@ export function Hero() {
           </p>
 
           <p className="max-w-xl text-lg text-slate-600 dark:text-slate-400">
-            {profile.tagline}
+            {t('hero.tagline')}
           </p>
 
           <div className="mt-4 flex flex-wrap gap-4">
             <Button variant="primary" onClick={() => (window.location.href = '#contact')}>
-              Contáctame
+              {t('hero.ctaContact')}
             </Button>
             <DownloadCvButton variant="outline" />
           </div>
@@ -63,10 +65,10 @@ export function Hero() {
 
             <div className="font-mono text-sm leading-relaxed text-slate-700 dark:text-slate-300">
               <p className="mb-2 text-indigo-600 dark:text-indigo-400">
-                &gt; initialize_stack()
+                &gt; {t('hero.terminal.initStack')}
               </p>
               <p className="mb-1 pl-4 text-slate-500 dark:text-slate-400">
-                Loading dependencies...
+                {t('hero.terminal.loadingDeps')}
               </p>
               {terminalLines.map((line) => (
                 <p key={line} className="pl-4 text-emerald-600 dark:text-emerald-400">
@@ -74,11 +76,11 @@ export function Hero() {
                 </p>
               ))}
               <p className="mt-4 text-indigo-600 dark:text-indigo-400">
-                &gt; await compile_experience()
+                &gt; {t('hero.terminal.awaitExperience')}
               </p>
               <div className="mt-2 flex items-center gap-2 pl-4">
                 <span className="inline-block h-4 w-2 animate-pulse bg-indigo-500" />
-                <span className="text-slate-500 dark:text-slate-400">Processing 8+ years...</span>
+                <span className="text-slate-500 dark:text-slate-400">{t('hero.terminal.processing')}</span>
               </div>
             </div>
           </div>
