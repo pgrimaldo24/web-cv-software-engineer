@@ -1,6 +1,7 @@
 export { Button } from './Button'
 export { Badge } from './Badge'
 export { Card } from './Card'
+export { DownloadCvButton } from './DownloadCvButton'
 export { Logo } from './Logo'
 export { SectionTitle } from './SectionTitle'
 export { ThemeToggle } from './ThemeToggle'

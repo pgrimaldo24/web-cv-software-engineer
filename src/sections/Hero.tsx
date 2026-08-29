@@ -1,4 +1,4 @@
-import { Button } from '../components'
+import { Button, DownloadCvButton } from '../components'
 import { profile } from '../data/profile'
 
 const terminalLines = [
@@ -46,9 +46,7 @@ export function Hero() {
             <Button variant="primary" onClick={() => (window.location.href = '#contact')}>
               Contáctame
             </Button>
-            <Button variant="outline" onClick={() => window.open(profile.resumeUrl, '_blank')}>
-              Descargar CV
-            </Button>
+            <DownloadCvButton variant="outline" />
           </div>
         </div>
 

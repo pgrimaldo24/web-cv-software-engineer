@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa'
-import { Button, ThemeToggle } from '../components'
+import { DownloadCvButton, ThemeToggle } from '../components'
 import { profile } from '../data/profile'
 import { useActiveSection } from '../hooks/useActiveSection'
 import { useScrolled } from '../hooks/useScrolled'
@@ -58,13 +58,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Button
-            variant="primary"
-            className="px-4 py-2 text-xs"
-            onClick={() => window.open(profile.resumeUrl, '_blank')}
-          >
-            Descargar CV
-          </Button>
+          <DownloadCvButton variant="primary" className="px-4 py-2 text-xs" />
           <a
             href={profile.linkedin}
             target="_blank"
@@ -138,13 +132,7 @@ export function Header() {
             )
           })}
           <div className="mt-2 flex items-center gap-4 border-t border-slate-200 pt-4 dark:border-slate-800">
-            <Button
-              variant="primary"
-              className="flex-1 px-4 py-2 text-xs"
-              onClick={() => window.open(profile.resumeUrl, '_blank')}
-            >
-              Descargar CV
-            </Button>
+            <DownloadCvButton variant="primary" className="flex-1 px-4 py-2 text-xs" />
             <a
               href={profile.linkedin}
               target="_blank"
