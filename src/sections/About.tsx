@@ -11,8 +11,6 @@ export function About() {
       />
       <div className="grid gap-8 md:grid-cols-3">
         <p className="text-base leading-relaxed text-slate-600 md:col-span-2 dark:text-slate-400">
-          8+ años construyendo software que realmente se usa, en equipos reales, con problemas reales.
-          <br /><br />
           Me muevo entre Java, .NET, React y Angular según lo que el proyecto necesite, pero mi foco
           siempre ha sido el mismo: sistemas que no pueden fallar. He trabajado en banca, retail y
           telecomunicaciones, sectores donde un error en producción tiene un costo real, diseñando
