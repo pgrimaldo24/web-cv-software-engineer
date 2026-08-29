@@ -1,10 +1,16 @@
+export interface ProjectRepo {
+  label: string
+  url: string
+}
+
 export interface Project {
   id: string
   title: string
+  category: string
   description: string
-  image?: string
-  technologies: string[]
+  longDescription?: string
+  stack: string[]
   repoUrl?: string
-  liveUrl?: string
-  featured?: boolean
+  repos?: ProjectRepo[]
+  highlights: string[]
 }

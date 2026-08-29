@@ -8,7 +8,7 @@ export function Contact() {
         align="center"
         eyebrow="Contacto"
         title="Hablemos"
-        description="¿Tienes un proyecto en mente o una oportunidad laboral? Escríbeme."
+        description="¿Tienes un proyecto interesante o una oportunidad laboral? Estoy abierto a nuevos retos, escríbeme y conversemos."
       />
       <div className="flex flex-col items-center gap-4">
         <Button variant="primary" onClick={() => (window.location.href = `mailto:${profile.email}`)}>
