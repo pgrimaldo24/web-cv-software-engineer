@@ -11,17 +11,22 @@ export function About() {
       />
       <div className="grid gap-8 md:grid-cols-3">
         <p className="text-base leading-relaxed text-slate-600 md:col-span-2 dark:text-slate-400">
-          En lo largo de mi experiencia me he enfocado en el desarrollo fullstack, moviéndome entre
-          Java, .NET, React y Angular según lo que el problema pida. He trabajado en proyectos
-          para banca, retail y telecomunicaciones sectores donde un error en producción cuesta
-          caro, así que aprendí a diseñar pensando en escalabilidad desde el día uno: microservicios,
-          programación reactiva, CQRS y buenas prácticas de Clean Architecture no son buzzwords
-          para mí, son lo que uso todos los días.
+          8+ años construyendo software que realmente se usa, en equipos reales, con problemas reales.
           <br /><br />
-          Me gusta el código que se entiende sin necesitar explicación, los pipelines que no fallan
-          a las 2am, y los equipos donde se puede discutir una decisión técnica sin ego de por medio.
-          Hoy sigo sumando: terminando mi carrera en la UPC y usando herramientas de IA como Claude
-          y Cursor para acelerar el desarrollo sin perder calidad en el código.
+          Me muevo entre Java, .NET, React y Angular según lo que el proyecto necesite, pero mi foco
+          siempre ha sido el mismo: sistemas que no pueden fallar. He trabajado en banca, retail y
+          telecomunicaciones, sectores donde un error en producción tiene un costo real, diseñando
+          microservicios, arquitecturas reactivas y soluciones bajo CQRS y Clean Architecture que hoy
+          corren en producción para clientes como BCP, Oechsle y Grupo Gloria.
+          <br /><br />
+          No solo escribo código: he migrado servicios completos a arquitecturas más eficientes
+          (Spring Boot a Quarkus, reduciendo tiempos de respuesta), implementado API Gateways desde
+          cero para ecosistemas de microservicios, y liderado equipos técnicos bajo Scrum cuando el
+          proyecto lo pidió. Me importa el código que se entiende sin necesitar explicación y los
+          pipelines que no fallan a las 2am.
+          <br /><br />
+          Sigo sumando: terminando Ingeniería de Sistemas en la UPC, y usando Claude y Cursor como
+          parte de mi flujo diario para acelerar el desarrollo sin sacrificar calidad.
         </p>
         <dl className="space-y-4 text-sm">
           <div>
