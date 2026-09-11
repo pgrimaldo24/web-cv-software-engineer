@@ -201,7 +201,7 @@
     "description": "Formación académica en curso y certificaciones que respaldan mi especialización en arquitectura, seguridad y buenas prácticas.",
     "degree": "Ingeniería de Sistemas",
     "institution": "Universidad Peruana de Ciencias Aplicadas (UPC)",
-    "detail": "Programa EPE (8vo ciclo)",
+    "detail": "Programa EPE",
     "status": "En curso",
     "groups": {
       "architecture": "Arquitectura & Microservicios",
