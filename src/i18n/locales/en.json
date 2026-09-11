@@ -201,8 +201,7 @@
     "description": "Ongoing academic training and certifications backing my specialization in architecture, security and best practices.",
     "degree": "Systems Engineering",
     "institution": "Universidad Peruana de Ciencias Aplicadas (UPC)",
-    "detail": "EPE Program (8th semester)",
-    "status": "In progress",
+    "detail": "EPE Program",
     "groups": {
       "architecture": "Architecture & Microservices",
       "security": "Security",

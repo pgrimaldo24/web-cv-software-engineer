@@ -33,9 +33,6 @@ function EducationCard() {
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{t('education.detail')}</p>
           </div>
         </div>
-        <Badge className="w-fit shrink-0 border-amber-300 bg-amber-50 text-amber-700 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-400">
-          {t('education.status')}
-        </Badge>
       </div>
     </Card>
   )
