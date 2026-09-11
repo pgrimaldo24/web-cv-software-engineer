@@ -48,76 +48,79 @@
       "topstrategic": {
         "role": "Senior Full-Stack Engineer",
         "achievements": [
-          "Diseño y desarrollo de aplicaciones end-to-end en .NET 6/8/9 y microservicios en Java (Spring Boot, Spring Cloud), con interfaces en Angular 21 y React + TypeScript para aplicaciones empresariales de Finanzas (Oechsle y Promart Homecenter).",
-          "Desarrollo y mantenimiento de APIs REST y microservicios en .NET, Java y Node.js, integrados con Oracle y Apache Kafka, desplegados en Docker/Kubernetes con gestión de Cronjobs.",
-          "Automatización de procesos con Quarkus y GraalVM, optimizando tiempos de arranque y consumo de recursos en servicios críticos.",
-          "Mensajería basada en eventos con Kafka on-premise y Pub/Sub en GCP; monitoreo con Grafana Loki y ELK.",
-          "Configuración de pipelines CI/CD en Azure DevOps, administración de clústeres AKS y Rancher.",
-          "Uso de Claude y Cursor AI para acelerar desarrollo, refactorización y documentación técnica."
+          "Diseño y desarrollo de aplicaciones end-to-end desde cero en .NET 6, .NET 8 y .NET 9, con interfaces en Angular 21 y React usando TypeScript, construyendo componentes reutilizables, escalables y responsivos para aplicaciones empresariales de Finanzas, Automatización de generación de precio de productos por SKU y Sistemas de gestión operativa de usuarios de Logística y Finanzas en Oechsle y Promart Homecenter.",
+          "Desarrollo de APIs REST y Minimal APIs en .NET, aplicando inyección de dependencias y programación asíncrona (async/await) para mejorar el rendimiento y la escalabilidad de los servicios.",
+          "Desarrollo y mantenimiento de APIs REST y microservicios en .NET y Node.js, integrados con bases de datos Oracle mediante consultas y paquetes PL/SQL como procedimientos, y operaciones bulk, para el procesamiento eficiente de grandes volúmenes de información, y Apache Kafka, desplegados en Docker/Kubernetes.",
+          "Implementación de autenticación y autorización con JWT como validación de tokens, scopes y claims para proteger los endpoints de las APIs.",
+          "Integración de servicios Azure (Azure Functions, Blob Storage) para las aplicaciones del cliente Oechsle, con monitoreo de logs mediante Azure Monitor.",
+          "Desarrollo de pruebas unitarias y de integración con xUnit/NUnit y Moq para garantizar la calidad y estabilidad de las APIs.",
+          "Trabajo bajo metodología ágil Scrum, con tableros Kanban para la gestión y priorización de tareas del equipo."
         ]
       },
       "evol": {
         "role": "Senior Backend Engineer",
         "achievements": [
-          "Desarrollo y mantenimiento de APIs REST y microservicios en Java (Spring Boot, Quarkus) y .NET, aplicando Clean Architecture y CQRS para aplicaciones financieras del Grupo Gloria.",
-          "Migración de servicios de Spring Boot a Quarkus, mejorando rendimiento y eficiencia de recursos.",
-          "Implementación de programación reactiva con Spring WebFlux y mensajería asíncrona con RabbitMQ para procesos financieros críticos.",
-          "Integración con APIs externas de bancos y proveedores de TI para sincronización de información financiera.",
-          "Automatización de procesos con Python desplegados en AWS para el proyecto \"Gloriosa\" (transmisión nacional).",
-          "Configuración de Kubernetes con HashiCorp Vault; monitoreo con ELK (Elasticsearch, Kibana).",
-          "Liderazgo de coordinación entre equipos de Infraestructura, Data, Project Managers y proveedores externos."
+          "Desarrollo y mantenimiento de aplicaciones web y APIs REST en .NET 6 y .NET Framework, aplicando Clean Code, Clean Architecture, el patrón CQRS e inyección de dependencias, para el soporte de aplicaciones financieras utilizadas por las distintas empresas del Grupo Gloria.",
+          "Implementación de mensajería asíncrona con RabbitMQ para la comunicación entre servicios internos y procesos financieros críticos, mejorando el desacoplamiento y la resiliencia del sistema.",
+          "Integración con APIs externas de bancos (BCP, Citibank, BBVA, Scotiabank BCP Bolivia, Interbank) y proveedores de TI para la sincronización de información financiera entre las empresas del grupo y terceros, asegurando la autenticación de los servicios mediante JWT (validación de tokens, scopes y claims).",
+          "Desarrollo de consultas y paquetes PL/SQL como procedimientos almacenados y operaciones bulk, sobre bases de datos Oracle para el procesamiento y sincronización eficiente de grandes volúmenes de información financiera.",
+          "Desarrollo de funciones serverless con AWS Lambda, expuestas mediante API Gateway, para el procesamiento de datos e integraciones financieras, con permisos gestionados en IAM, credenciales custodiadas en Secrets Manager, monitoreo mediante CloudWatch.",
+          "Desarrollo de pruebas unitarias y de integración con xUnit/NUnit y Moq para validar la lógica de negocio de los servicios financieros.",
+          "Desarrollo de scripts de automatización en Python para procesos de datos e integración, con despliegue de componentes sobre infraestructura AWS para el proyecto promoción Gloriosa que fue televisada a nivel nacional."
         ]
       },
       "digitalia-tec": {
         "role": "Senior Backend Engineer | .NET & React",
         "achievements": [
-          "Diseño y desarrollo de APIs REST en .NET Core para el área de Contabilidad de Juntoz.com.",
-          "Desarrollo de interfaces frontend en React con TypeScript para módulos contables.",
-          "Implementación de CQRS mediante comandos, consultas y Mediator.",
-          "Aplicación de patrones de diseño en el sistema MerchantCentral.",
-          "Configuración de pipelines CI/CD en Azure DevOps."
+          "Diseño y desarrollo de APIs REST en .NET Core para el área de Contabilidad de Juntoz.com, incluyendo una vista funcional para el cálculo de ingresos y egresos diarios del e-commerce.",
+          "Desarrollo y mantenimiento de interfaces frontend en React con TypeScript, consumiendo las APIs REST para los módulos contables del sistema.",
+          "Implementación del patrón CQRS mediante comandos, consultas y Mediator, logrando una separación clara de responsabilidades.",
+          "Aplicación de patrones de diseño en los servicios del sistema MerchantCentral para mejorar mantenibilidad y extensibilidad.",
+          "Configuración de pipelines CI/CD en Azure DevOps para automatizar pruebas, despliegues y gestión de versiones, trabajando bajo metodología Scrum.",
+          "Implementación de autenticación mediante OAuth 2.0 para proteger los endpoints de las APIs consumidas por los módulos contables."
         ]
       },
       "casino-atlantic-city": {
         "role": "System Senior Specialist",
         "achievements": [
-          "Diseño e implementación de API Gateway con Kong Enterprise para ecosistema de microservicios del casino online.",
-          "Desarrollo de microservicios en Java (Spring Boot, Spring Cloud, Hibernate) y APIs REST en .NET.",
-          "Creación de la app \"Finanzas Atlantic\" con procesos ETL desde SAP y SQL Server.",
-          "Logging centralizado con Kibana/Elasticsearch sobre clúster Kubernetes.",
-          "Coordinación de equipo de 4 personas bajo Scrum."
+          "Desarrollo de APIs REST en .NET (Core, .NET 5 y .NET 6) para los sistemas internos del casino online.",
+          "Diseño e implementación de un nuevo modelo de API Gateway con Kong Enterprise, habilitando un ecosistema de microservicios para el casino online.",
+          "Creación de la aplicación \"Finanzas Atlantic\" para visualizar ingresos y egresos del casino online, integrando procesos ETL desde SAP, SQL Server y Oracle, reduciendo el tiempo de cálculo y carga de información hacia los ERP del cliente.",
+          "Desarrollo de funciones serverless (AWS Lambda) para automatizar tareas del backend como el procesamiento de eventos y la generación de reportes financieros, reduciendo la carga sobre los servidores principales.",
+          "Configuración de monitoreo y alertas con Amazon CloudWatch para el seguimiento de logs y métricas de la plataforma, mejorando la detección temprana de incidencias en producción.",
+          "Coordinación de un equipo de 4 personas bajo metodología Scrum."
         ]
       },
       "ntt-data": {
         "role": "Fullstack Developer",
         "achievements": [
-          "Desarrollo de la aplicación CVT para la tribu ARPAY en BCP (registro e inventario de tecnologías).",
-          "Desarrollo en MVC ASP.NET con integración de CI/CD en Jenkins.",
-          "Documentación técnica y soporte en tiempo real a equipos de la tribu."
+          "Desarrollo de la aplicación CVT para la tribu ARPAY en BCP, aplicación web en MVC ASP.NET, con repositorio en Bitbucket e integración de pipelines CI/CD en Jenkins.",
+          "Integración de la aplicación CVT con bases de datos Oracle para la gestión de información financiera de la tribu ARPAY.",
+          "Documentación técnica de los desarrollos culminados y soporte en tiempo real a los equipos de la tribu ARPAY, bajo metodología ágil Scrum."
         ]
       },
       "experis": {
         "role": "Fullstack .NET y Angular",
         "achievements": [
-          "Mantenimiento de aplicaciones Angular 11 y .NET Core/EF para Ferreyros, CI/CD en Azure DevOps."
+          "Mantenimiento de aplicaciones en Angular 11 y .NET Core/Entity Framework para procesos de negocio de Ferreyros, con despliegue continuo en Azure DevOps."
         ]
       },
       "xternal": {
         "role": "Java, Kotlin, .NET, Angular",
         "achievements": [
-          "Liderazgo de apps Calidda GNV y Actualización de Datos; microservicios Java/Spring Boot/WebFlux; apps móviles Kotlin/Swift."
+          "Liderazgo y desarrollo de las apps Calidda GNV y Actualización de Datos; apps móviles en Kotlin/Swift."
         ]
       },
       "sigcomt": {
         "role": "Backend Developer .NET",
         "achievements": [
-          "Módulos de evaluación crediticia y servicios SOAP/REST para Compartamos Financiera."
+          "Desarrollo de nuevos módulos (evaluación crediticia, generación de tarjetas, aprobación de créditos) y servicios SOAP/REST para Compartamos Financiera."
         ]
       },
       "everis": {
         "role": "Junior Software Developer .NET",
         "achievements": [
-          "ASP.NET Web Forms, Xamarin y Telerik para BBVA, Entel y Pacífico."
+          "Desarrollo y soporte en ASP.NET Web Forms, Xamarin y componentes Telerik para clientes BBVA, Entel y Pacífico."
         ]
       }
     }
