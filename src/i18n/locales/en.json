@@ -48,12 +48,15 @@
       "topstrategic": {
         "role": "Senior Full-Stack Engineer",
         "achievements": [
-          "Designed and built end-to-end applications from scratch in .NET 6, .NET 8 and .NET 9, with interfaces in Angular 21 and React using TypeScript, building reusable, scalable and responsive components for enterprise Finance applications, SKU-based product pricing automation, and Logistics and Finance user management systems at Oechsle and Promart Homecenter.",
-          "Built REST APIs and Minimal APIs in .NET, applying dependency injection and asynchronous programming (async/await) to improve service performance and scalability.",
-          "Developed and maintained REST APIs and microservices in .NET and Node.js, integrated with Oracle databases through queries and PL/SQL packages as stored procedures, and bulk operations, for efficient processing of large volumes of information, and Apache Kafka, deployed on Docker/Kubernetes.",
-          "Implemented authentication and authorization with JWT, including token, scope and claim validation to secure API endpoints.",
+          "Designed and built end-to-end applications from scratch in .NET 6, .NET 8, .NET 9 and Node.js (NestJS, Express.js), with interfaces in Angular 21 and React using TypeScript, building reusable, scalable and responsive components for enterprise Finance applications, SKU-based product pricing automation, and Logistics and Finance user management systems at Oechsle and Promart Homecenter.",
+          "Built REST APIs in .NET and services in NestJS/Express.js, applying dependency injection, Service/Repository pattern and asynchronous programming to improve service performance and scalability, with versioning, validation, error handling and Swagger documentation.",
+          "Developed and maintained REST APIs and microservices in .NET and Node with TypeScript, integrated with Oracle databases through queries and PL/SQL packages as stored procedures, and bulk operations, for efficient processing of large volumes of information, and Apache Kafka, deployed on Docker/Kubernetes.",
+          "Used MySQL and PostgreSQL with TypeORM and Prisma in Node.js services, handling migrations, indexes and SQL query optimization.",
+          "Participated in the gradual migration of monolithic modules to microservices, separating domains and communicating services through events with Apache Kafka, as well as Redis for caching and queues.",
+          "Implemented authentication and authorization with JWT and OAuth 2.0, including token, scope and claim validation to secure API endpoints, along with CORS, rate limiting, input validation and management of environment variables and secrets.",
           "Integrated Azure services (Azure Functions, Blob Storage) for Oechsle client applications, with log monitoring via Azure Monitor.",
-          "Wrote unit and integration tests with xUnit/NUnit and Moq to ensure API quality and stability.",
+          "Configured environments with Docker Compose and Nginx as a reverse proxy on Linux servers, with CI/CD pipelines in GitHub Actions for service deployment.",
+          "Wrote unit and integration tests with xUnit/NUnit and Moq in .NET, and Jest in Node.js, to ensure API quality and stability.",
           "Worked under agile Scrum methodology, using Kanban boards to manage and prioritize team tasks."
         ]
       },

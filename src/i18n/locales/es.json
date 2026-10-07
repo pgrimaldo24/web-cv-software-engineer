@@ -48,12 +48,15 @@
       "topstrategic": {
         "role": "Senior Full-Stack Engineer",
         "achievements": [
-          "Diseño y desarrollo de aplicaciones end-to-end desde cero en .NET 6, .NET 8 y .NET 9, con interfaces en Angular 21 y React usando TypeScript, construyendo componentes reutilizables, escalables y responsivos para aplicaciones empresariales de Finanzas, Automatización de generación de precio de productos por SKU y Sistemas de gestión operativa de usuarios de Logística y Finanzas en Oechsle y Promart Homecenter.",
-          "Desarrollo de APIs REST y Minimal APIs en .NET, aplicando inyección de dependencias y programación asíncrona (async/await) para mejorar el rendimiento y la escalabilidad de los servicios.",
-          "Desarrollo y mantenimiento de APIs REST y microservicios en .NET y Node.js, integrados con bases de datos Oracle mediante consultas y paquetes PL/SQL como procedimientos, y operaciones bulk, para el procesamiento eficiente de grandes volúmenes de información, y Apache Kafka, desplegados en Docker/Kubernetes.",
-          "Implementación de autenticación y autorización con JWT como validación de tokens, scopes y claims para proteger los endpoints de las APIs.",
+          "Diseño y desarrollo de aplicaciones end-to-end desde cero en .NET 6, .NET 8, .NET 9 y Node.js (NestJS, Express.js), con interfaces en Angular 21 y React usando TypeScript, construyendo componentes reutilizables, escalables y responsivos para aplicaciones empresariales de Finanzas, Automatización de generación de precio de productos por SKU y Sistemas de gestión operativa de usuarios de Logística y Finanzas en Oechsle y Promart Homecenter.",
+          "Desarrollo de APIs REST en .NET y servicios en NestJS/Express.js, aplicando inyección de dependencias, Service/Repository y programación asíncrona para mejorar el rendimiento y la escalabilidad de los servicios, con versionado, validación, manejo de errores y documentación en Swagger.",
+          "Desarrollo y mantenimiento de APIs REST y microservicios en .NET y Node con Ts, integrados con bases de datos Oracle mediante consultas y paquetes PL/SQL como procedimientos, y operaciones bulk, para el procesamiento eficiente de grandes volúmenes de información, y Apache Kafka, desplegados en Docker/Kubernetes.",
+          "Uso de MySQL y PostgreSQL con TypeORM y Prisma en los servicios Node.js, trabajando migraciones, índices y optimización de consultas SQL.",
+          "Participación en la migración gradual de módulos monolíticos hacia microservicios, separando dominios y comunicando servicios por eventos con Apache Kafka, además de Redis para caché y colas.",
+          "Implementación de autenticación y autorización con JWT y OAuth 2.0 como validación de tokens, scopes y claims para proteger los endpoints de las APIs, junto con CORS, rate limiting, validación de inputs y manejo de variables de entorno y secretos.",
           "Integración de servicios Azure (Azure Functions, Blob Storage) para las aplicaciones del cliente Oechsle, con monitoreo de logs mediante Azure Monitor.",
-          "Desarrollo de pruebas unitarias y de integración con xUnit/NUnit y Moq para garantizar la calidad y estabilidad de las APIs.",
+          "Configuración de entornos con Docker Compose y Nginx como reverse proxy en servidores Linux, con pipelines CI/CD en GitHub Actions para el despliegue de los servicios.",
+          "Desarrollo de pruebas unitarias y de integración con xUnit/NUnit y Moq en .NET, y Jest en Node.js, para garantizar la calidad y estabilidad de las APIs.",
           "Trabajo bajo metodología ágil Scrum, con tableros Kanban para la gestión y priorización de tareas del equipo."
         ]
       },
