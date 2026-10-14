@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Pierr Grimaldo',
-  role: 'Software Engineer',
+  role: 'Senior .NET Developer',
   location: 'Lima, Perú',
   email: 'pierr_grimaldo@hotmail.com',
   github: 'https://github.com/pgrimaldo24',

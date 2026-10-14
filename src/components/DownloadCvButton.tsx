@@ -1,8 +1,14 @@
 import type { AnchorHTMLAttributes } from 'react'
 import { useTranslation } from 'react-i18next'
-import cvFile from '../assets/docs/CV_SR_Software_Engineer_Pierr_Grimaldo.pdf'
+import cvFileEs from '../assets/docs/CV_Pierr_Grimaldo_Senior_Software_Engineer.pdf'
+import cvFileEn from '../assets/docs/CV_Pierr_Grimaldo_Senior_Software_Engineer_EN.pdf'
 
 type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'outline'
+
+const cvFiles: Record<'es' | 'en', { file: string; fileName: string }> = {
+  es: { file: cvFileEs, fileName: 'CV_Pierr_Grimaldo_Senior_Software_Engineer.pdf' },
+  en: { file: cvFileEn, fileName: 'CV_Pierr_Grimaldo_Senior_Software_Engineer_EN.pdf' },
+}
 
 interface DownloadCvButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: ButtonVariant
@@ -24,11 +30,13 @@ export function DownloadCvButton({
   className = '',
   ...props
 }: DownloadCvButtonProps) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const language = i18n.language.startsWith('en') ? 'en' : 'es'
+  const { file, fileName } = cvFiles[language]
   return (
     <a
-      href={cvFile}
-      download="CV_SR_Software_Engineer_Pierr_Grimaldo.pdf"
+      href={file}
+      download={fileName}
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950 ${variantClasses[variant]} ${className}`}

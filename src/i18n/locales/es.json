@@ -18,7 +18,7 @@
   "hero": {
     "badge": "Disponible para nuevas oportunidades",
     "greeting": "Hola, soy",
-    "tagline": "Diseño y desarrollo microservicios escalables para sistemas críticos de banca, retail y telecomunicaciones.",
+    "tagline": "Diseño y desarrollo aplicaciones web y APIs con .NET, Angular y React para clientes de los sectores financiero, retail y entretenimiento.",
     "ctaContact": "Contáctame",
     "terminal": {
       "initStack": "initialize_stack()",
@@ -30,8 +30,8 @@
   "about": {
     "eyebrow": "Sobre mí",
     "title": "Un poco de mi historia",
-    "paragraph1": "Me muevo entre Java, .NET, React y Angular según lo que el proyecto necesite, pero mi foco siempre ha sido el mismo: sistemas que no pueden fallar. He trabajado en banca, retail y telecomunicaciones, sectores donde un error en producción tiene un costo real, diseñando microservicios, arquitecturas reactivas y soluciones bajo CQRS y Clean Architecture que hoy corren en producción para clientes como BCP, Oechsle y Grupo Gloria.",
-    "paragraph2": "No solo escribo código: he migrado servicios completos a arquitecturas más eficientes (Spring Boot a Quarkus, reduciendo tiempos de respuesta), implementado API Gateways desde cero para ecosistemas de microservicios, y liderado equipos técnicos bajo Scrum cuando el proyecto lo pidió. Me importa escribir código claro y tomar decisiones de arquitectura que el equipo pueda mantener sin depender de mí.",
+    "paragraph1": "Desarrollador .NET Senior con 8 años de experiencia diseñando y desarrollando aplicaciones web y APIs con C#, .NET (Framework, Core, .NET 6/8/9) y ASP.NET MVC, complementadas con frontend en Angular/React y TypeScript, para clientes de los sectores financiero, retail y entretenimiento. Cuento con 4 años de experiencia trabajando con bases de datos Oracle, además de SQL Server, y 6 años aplicando metodologías ágiles (Scrum/Kanban) en equipos de desarrollo.",
+    "paragraph2": "Experiencia en Clean Architecture, CQRS y patrones de diseño, integración de APIs REST/SOAP, Entity Framework, despliegue continuo en Azure DevOps y servicios cloud en Azure y AWS. Aplico buenas prácticas de Clean Code y SOLID, y utilizo herramientas de IA (Claude, Cursor) para acelerar el desarrollo y la refactorización de código.",
     "paragraph3": "Sigo sumando: terminando Ingeniería de Sistemas en la UPC, y usando Claude y Cursor como parte de mi flujo diario para acelerar el desarrollo sin sacrificar calidad.",
     "location": "Ubicación",
     "email": "Email"
@@ -46,30 +46,23 @@
     "additional": "Experiencia adicional",
     "items": {
       "topstrategic": {
-        "role": "Senior Full-Stack Engineer",
+        "role": "Senior .NET Full-Stack Developer (Freelance)",
         "achievements": [
-          "Diseño y desarrollo de aplicaciones end-to-end desde cero en .NET 6, .NET 8, .NET 9 y Node.js (NestJS, Express.js), con interfaces en Angular 21 y React usando TypeScript, construyendo componentes reutilizables, escalables y responsivos para aplicaciones empresariales de Finanzas, Automatización de generación de precio de productos por SKU y Sistemas de gestión operativa de usuarios de Logística y Finanzas en Oechsle y Promart Homecenter.",
-          "Desarrollo de APIs REST en .NET y servicios en NestJS/Express.js, aplicando inyección de dependencias, Service/Repository y programación asíncrona para mejorar el rendimiento y la escalabilidad de los servicios, con versionado, validación, manejo de errores y documentación en Swagger.",
-          "Desarrollo y mantenimiento de APIs REST y microservicios en .NET y Node con Ts, integrados con bases de datos Oracle mediante consultas y paquetes PL/SQL como procedimientos, y operaciones bulk, para el procesamiento eficiente de grandes volúmenes de información, y Apache Kafka, desplegados en Docker/Kubernetes.",
-          "Uso de MySQL y PostgreSQL con TypeORM y Prisma en los servicios Node.js, trabajando migraciones, índices y optimización de consultas SQL.",
-          "Participación en la migración gradual de módulos monolíticos hacia microservicios, separando dominios y comunicando servicios por eventos con Apache Kafka, además de Redis para caché y colas.",
-          "Implementación de autenticación y autorización con JWT y OAuth 2.0 como validación de tokens, scopes y claims para proteger los endpoints de las APIs, junto con CORS, rate limiting, validación de inputs y manejo de variables de entorno y secretos.",
-          "Integración de servicios Azure (Azure Functions, Blob Storage) para las aplicaciones del cliente Oechsle, con monitoreo de logs mediante Azure Monitor.",
-          "Configuración de entornos con Docker Compose y Nginx como reverse proxy en servidores Linux, con pipelines CI/CD en GitHub Actions para el despliegue de los servicios.",
-          "Desarrollo de pruebas unitarias y de integración con xUnit/NUnit y Moq en .NET, y Jest en Node.js, para garantizar la calidad y estabilidad de las APIs.",
-          "Trabajo bajo metodología ágil Scrum, con tableros Kanban para la gestión y priorización de tareas del equipo."
+          "Desarrollé desde cero en .NET 8/9 y Angular 21 los sistemas de Finanzas, precios por SKU y gestión operativa de Logística y Finanzas para Oechsle y Promart Homecenter.",
+          "Optimicé el proceso batch de homologación de ventas nacionales para Finanzas (cerca de 1 millón de registros), que corría de madrugada y tardaba de 2 a 4 horas: lo rediseñé en .NET con procesamiento asíncrono en paralelo por lotes (async/await, Task.WhenAll y SemaphoreSlim) y precarga en memoria de los códigos a homologar, eliminando las consultas registro por registro; ahora termina en 6 a 10 minutos y se ejecuta en el día.",
+          "Finanzas abría de 3 a 4 tickets diarios (hasta 14 en cierre de mes) por códigos, costos y cálculos errados sin saber dónde nacía el error; reestructuré el frontend con validaciones y trazabilidad por registro, y esos tickets se redujeron drásticamente.",
+          "Construí servicios REST en .NET con JWT, comunicados por Kafka y desplegados en Docker/Kubernetes, integrados con Azure Functions y Blob Storage y con pruebas en xUnit/NUnit y Moq."
         ]
       },
       "evol": {
-        "role": "Senior Backend Engineer",
+        "role": "Senior Software Engineer",
         "achievements": [
-          "Desarrollo y mantenimiento de aplicaciones web y APIs REST en .NET 6 y .NET Framework, aplicando Clean Code, Clean Architecture, el patrón CQRS e inyección de dependencias, para el soporte de aplicaciones financieras utilizadas por las distintas empresas del Grupo Gloria.",
-          "Implementación de mensajería asíncrona con RabbitMQ para la comunicación entre servicios internos y procesos financieros críticos, mejorando el desacoplamiento y la resiliencia del sistema.",
-          "Integración con APIs externas de bancos (BCP, Citibank, BBVA, Scotiabank BCP Bolivia, Interbank) y proveedores de TI para la sincronización de información financiera entre las empresas del grupo y terceros, asegurando la autenticación de los servicios mediante JWT (validación de tokens, scopes y claims).",
-          "Desarrollo de consultas y paquetes PL/SQL como procedimientos almacenados y operaciones bulk, sobre bases de datos Oracle para el procesamiento y sincronización eficiente de grandes volúmenes de información financiera.",
-          "Desarrollo de funciones serverless con AWS Lambda, expuestas mediante API Gateway, para el procesamiento de datos e integraciones financieras, con permisos gestionados en IAM, credenciales custodiadas en Secrets Manager, monitoreo mediante CloudWatch.",
-          "Desarrollo de pruebas unitarias y de integración con xUnit/NUnit y Moq para validar la lógica de negocio de los servicios financieros.",
-          "Desarrollo de scripts de automatización en Python para procesos de datos e integración, con despliegue de componentes sobre infraestructura AWS para el proyecto promoción Gloriosa que fue televisada a nivel nacional."
+          "Mantuve y refactoricé el sistema de Finanzas del Grupo Gloria en .NET 6 y .NET Framework (Clean Architecture, CQRS) y sus paquetes PL/SQL en Oracle.",
+          "Integré BCP, Interbank y Scotiabank al sistema Host to Host del Grupo Gloria, que procesa los pagos masivos de planillas, proveedores y transferencias del grupo: los lotes se generan en SAP y se envían a cada banco mediante servicios SOAP.",
+          "Migré la plataforma de pagos de Windows Forms a una aplicación web en React y .NET, con selección masiva de pagos y gestión de permisos; el área de Finanzas pasó de unos 30 minutos a pocos minutos por proceso de pago.",
+          "Desarrollé APIs REST en Java 11 con Spring Boot, combinando programación funcional (Streams, Optional) e imperativa, para los módulos del sistema de monitoreo de empaquetado de productos Gloria, desplegados en AWS EKS.",
+          "Llevé a un dashboard el empaquetado de las líneas en tiempo real, consumiendo APIs integradas con los PLC de planta, con monitoreo de logs en ELK (Kibana).",
+          "Participé en la promoción \"Gloriosa\", televisada a nivel nacional, con funciones AWS Lambda y scripts de automatización en Python."
         ]
       },
       "digitalia-tec": {
@@ -95,7 +88,7 @@
         ]
       },
       "ntt-data": {
-        "role": "Fullstack Developer",
+        "role": "Fullstack Developer .NET",
         "achievements": [
           "Desarrollo de la aplicación CVT para la tribu ARPAY en BCP, aplicación web en MVC ASP.NET, con repositorio en Bitbucket e integración de pipelines CI/CD en Jenkins.",
           "Integración de la aplicación CVT con bases de datos Oracle para la gestión de información financiera de la tribu ARPAY.",
@@ -109,13 +102,13 @@
         ]
       },
       "xternal": {
-        "role": "Java, Kotlin, .NET, Angular",
+        "role": ".NET, Angular, Java, Kotlin",
         "achievements": [
           "Liderazgo y desarrollo de las apps Calidda GNV y Actualización de Datos; apps móviles en Kotlin/Swift."
         ]
       },
       "sigcomt": {
-        "role": "Backend Developer .NET",
+        "role": "Backend Developer .NET · Oracle",
         "achievements": [
           "Desarrollo de nuevos módulos (evaluación crediticia, generación de tarjetas, aprobación de créditos) y servicios SOAP/REST para Compartamos Financiera."
         ]
@@ -135,16 +128,14 @@
     "groups": {
       "backend": "Backend",
       "frontend": "Frontend",
-      "architecture": "Arquitectura & Patrones",
       "databases": "Bases de Datos",
       "cloud-devops": "Cloud & DevOps",
-      "messaging": "Mensajería & Integración",
-      "observability": "Observabilidad & Calidad",
+      "messaging": "Arquitectura & Mensajería",
+      "observability": "Calidad",
       "ai-tools": "Herramientas de IA"
     },
     "items": {
-      "Microservicios": "Microservicios",
-      "Programación Reactiva": "Programación Reactiva"
+      "Microservicios": "Microservicios"
     }
   },
   "projects": {
@@ -215,22 +206,14 @@
     },
     "items": {
       "architecture": {
-        "0": "Spring Boot & Spring WebFlux: Programación Reactiva RESTful",
-        "1": "Quarkus: Desarrollo Ágil de Microservicios, GraphQL y GraalVM",
-        "2": "Microservicios con Spring Cloud y Spring Boot",
-        "3": "Java Microservices: CQRS and Event Sourcing with Kafka",
-        "4": "Clean Architecture: Microservicios con .NET 6 y RabbitMQ",
-        "5": "Starting with Quarkus"
+        "0": "Clean Architecture: Microservicios con .NET 6 y RabbitMQ"
       },
       "security": {
-        "0": "Web Security: Injection Attacks with Java and Spring Boot",
-        "1": "Microservices Security",
-        "2": "Mastering the Security Code Review"
+        "0": "Microservices Security",
+        "1": "Mastering the Security Code Review"
       },
       "best-practices": {
-        "0": "Complete Java Design Patterns masterclass",
-        "1": "Programación funcional en Java con Lambdas y Streams",
-        "2": "Clean Code"
+        "0": "Clean Code"
       },
       "devops": {
         "0": "Azure DevOps Fundamentals for Beginners",

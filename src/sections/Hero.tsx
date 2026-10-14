@@ -3,11 +3,11 @@ import { Button, DownloadCvButton } from '../components'
 import { profile } from '../data/profile'
 
 const terminalLines = [
-  'Java / Spring Boot',
-  '[OK] C# / .NET Core',
-  '[OK] Microservices Architecture',
-  '[OK] Kafka Event Streaming',
-  '[OK] Docker / K8s'
+  'C# / .NET 9',
+  '[OK] Angular / React',
+  '[OK] Clean Architecture / CQRS',
+  '[OK] Oracle / SQL Server',
+  '[OK] Azure / AWS'
 ]
 
 export function Hero() {

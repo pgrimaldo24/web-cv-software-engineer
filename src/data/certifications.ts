@@ -1,18 +1,13 @@
-import { Blocks, GitBranch, Layers, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
+import { GitBranch, Layers, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
 import type { CertificationGroup } from '../types'
 
 export const certificationGroups: CertificationGroup[] = [
   {
     id: 'architecture',
     category: 'Arquitectura & Microservicios',
-    icon: Blocks,
+    icon: Sparkles,
     items: [
-      { name: 'Spring Boot & Spring WebFlux: Programación Reactiva RESTful', institution: 'Udemy', year: '2025' },
-      { name: 'Quarkus: Desarrollo Ágil de Microservicios, GraphQL y GraalVM', institution: 'Udemy', year: '2025' },
-      { name: 'Microservicios con Spring Cloud y Spring Boot', institution: 'Udemy' },
-      { name: 'Java Microservices: CQRS and Event Sourcing with Kafka', year: '2026' },
       { name: 'Clean Architecture: Microservicios con .NET 6 y RabbitMQ', institution: 'Udemy', year: '2022' },
-      { name: 'Starting with Quarkus', year: '2026' },
     ],
   },
   {
@@ -20,7 +15,6 @@ export const certificationGroups: CertificationGroup[] = [
     category: 'Seguridad',
     icon: ShieldCheck,
     items: [
-      { name: 'Web Security: Injection Attacks with Java and Spring Boot', year: '2026' },
       { name: 'Microservices Security', year: '2026' },
       { name: 'Mastering the Security Code Review', year: '2026' },
     ],
@@ -29,11 +23,7 @@ export const certificationGroups: CertificationGroup[] = [
     id: 'best-practices',
     category: 'Buenas Prácticas & Patrones',
     icon: Sparkles,
-    items: [
-      { name: 'Complete Java Design Patterns masterclass', year: '2026' },
-      { name: 'Programación funcional en Java con Lambdas y Streams', year: '2026' },
-      { name: 'Clean Code', year: '2026' },
-    ],
+    items: [{ name: 'Clean Code', year: '2026' }],
   },
   {
     id: 'devops',

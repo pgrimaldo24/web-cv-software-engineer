@@ -5,7 +5,7 @@ import { Badge, Card, SectionTitle } from '../components'
 import { experience } from '../data/experience'
 import type { Experience as ExperienceItem } from '../types'
 
-const FEATURED_COUNT = 5
+const FEATURED_COUNT = 3
 
 function ExperienceCard({ item }: { item: ExperienceItem }) {
   const { t } = useTranslation()
