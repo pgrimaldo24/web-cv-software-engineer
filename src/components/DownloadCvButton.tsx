@@ -1,13 +1,13 @@
 import type { AnchorHTMLAttributes } from 'react'
 import { useTranslation } from 'react-i18next'
-import cvFileEs from '../assets/docs/CV_Pierr_Grimaldo_Senior_Software_Engineer.pdf'
-import cvFileEn from '../assets/docs/CV_Pierr_Grimaldo_Senior_Software_Engineer_EN.pdf'
+import cvFileEs from '../assets/docs/CV_Pierr_Grimaldo_Software_Engineer.pdf'
+import cvFileEn from '../assets/docs/CV_Pierr_Grimaldo_Software_Engineer_EN.pdf'
 
 type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'outline'
 
 const cvFiles: Record<'es' | 'en', { file: string; fileName: string }> = {
-  es: { file: cvFileEs, fileName: 'CV_Pierr_Grimaldo_Senior_Software_Engineer.pdf' },
-  en: { file: cvFileEn, fileName: 'CV_Pierr_Grimaldo_Senior_Software_Engineer_EN.pdf' },
+  es: { file: cvFileEs, fileName: 'CV_Pierr_Grimaldo_Software_Engineer.pdf' },
+  en: { file: cvFileEn, fileName: 'CV_Pierr_Grimaldo_Software_Engineer_EN.pdf' },
 }
 
 interface DownloadCvButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {

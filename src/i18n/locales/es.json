@@ -18,7 +18,7 @@
   "hero": {
     "badge": "Disponible para nuevas oportunidades",
     "greeting": "Hola, soy",
-    "tagline": "Diseño y desarrollo aplicaciones web y APIs con .NET, Angular y React para clientes de los sectores financiero, retail y entretenimiento.",
+    "tagline": "Ingeniero de software Senior Full Stack: desarrollo aplicaciones web y APIs con Java (Spring Boot) y .NET, y frontend en React y Angular, para clientes de los sectores retail, financiero e industrial.",
     "ctaContact": "Contáctame",
     "terminal": {
       "initStack": "initialize_stack()",
@@ -30,9 +30,8 @@
   "about": {
     "eyebrow": "Sobre mí",
     "title": "Un poco de mi historia",
-    "paragraph1": "Desarrollador .NET Senior con 8 años de experiencia diseñando y desarrollando aplicaciones web y APIs con C#, .NET (Framework, Core, .NET 6/8/9) y ASP.NET MVC, complementadas con frontend en Angular/React y TypeScript, para clientes de los sectores financiero, retail y entretenimiento. Cuento con 4 años de experiencia trabajando con bases de datos Oracle, además de SQL Server, y 6 años aplicando metodologías ágiles (Scrum/Kanban) en equipos de desarrollo.",
-    "paragraph2": "Experiencia en Clean Architecture, CQRS y patrones de diseño, integración de APIs REST/SOAP, Entity Framework, despliegue continuo en Azure DevOps y servicios cloud en Azure y AWS. Aplico buenas prácticas de Clean Code y SOLID, y utilizo herramientas de IA (Claude, Cursor) para acelerar el desarrollo y la refactorización de código.",
-    "paragraph3": "Sigo sumando: terminando Ingeniería de Sistemas en la UPC, y usando Claude y Cursor como parte de mi flujo diario para acelerar el desarrollo sin sacrificar calidad.",
+    "paragraph1": "Senior Software Engineer Full Stack con 8 años de experiencia en Java y .NET, con frontend en React y Angular. Amplia experiencia en retail, además de proyectos financieros e industriales. 4 años con Oracle y siempre en equipos ágiles con Scrum.",
+    "paragraph2": "Microservicios, Clean Architecture, patrones de diseño e integración REST/SOAP. Despliegues en Azure (CI/CD en Azure DevOps), AWS (EKS, Lambda, CloudWatch) y GCP (Pub/Sub, Cloud Storage). Aplico Clean Code y SOLID.",
     "location": "Ubicación",
     "email": "Email"
   },
@@ -46,53 +45,49 @@
     "additional": "Experiencia adicional",
     "items": {
       "topstrategic": {
-        "role": "Senior .NET Full-Stack Developer (Freelance)",
+        "role": "Senior Full Stack Engineer (Freelance)",
         "achievements": [
-          "Desarrollé desde cero en .NET 8/9 y Angular 21 los sistemas de Finanzas, precios por SKU y gestión operativa de Logística y Finanzas para Oechsle y Promart Homecenter.",
-          "Optimicé el proceso batch de homologación de ventas nacionales para Finanzas (cerca de 1 millón de registros), que corría de madrugada y tardaba de 2 a 4 horas: lo rediseñé en .NET con procesamiento asíncrono en paralelo por lotes (async/await, Task.WhenAll y SemaphoreSlim) y precarga en memoria de los códigos a homologar, eliminando las consultas registro por registro; ahora termina en 6 a 10 minutos y se ejecuta en el día.",
-          "Finanzas abría de 3 a 4 tickets diarios (hasta 14 en cierre de mes) por códigos, costos y cálculos errados sin saber dónde nacía el error; reestructuré el frontend con validaciones y trazabilidad por registro, y esos tickets se redujeron drásticamente.",
-          "Construí servicios REST en .NET con JWT, comunicados por Kafka y desplegados en Docker/Kubernetes, integrados con Azure Functions y Blob Storage y con pruebas en xUnit/NUnit y Moq."
+          "Desarrollé los nuevos proyectos de principio a fin: servicios REST en Java con Spring Boot y JPA sobre Oracle, frontend en React y despliegue en GCP.",
+          "Di mantenimiento a los sistemas legacy en .NET 5 y 6 de Finanzas, el mantenedor de precios por SKU y gestión operativa, incluidos sus servicios y jobs.",
+          "Implementé la publicación de eventos de productos con SKU, precio y promociones en tópicos de GCP Pub/Sub; el sistema logístico los consume y los registra en CT3 sobre Oracle.",
+          "Migré el Sistema de Gestión Tributaria (SGT) de .NET Framework a React y Java 21 con Spring Boot. Ahora responde más rápido y sus APIs quedaron listas para que otros sistemas las reutilicen.",
+          "Bajé de 2-4 horas a 6-10 minutos el batch de homologación de ventas de Finanzas, cerca de un millón de registros, procesándolo en paralelo por lotes con CompletableFuture y cargando los códigos en memoria.",
+          "Reestructuré el frontend en React con validaciones y trazabilidad por registro. Finanzas abría de 3 a 4 tickets al día por códigos y cálculos errados, y hasta 14 en cierre de mes; esos tickets bajaron notablemente."
         ]
       },
       "evol": {
-        "role": "Senior Software Engineer",
+        "role": "Senior Java Software Engineer",
         "achievements": [
-          "Mantuve y refactoricé el sistema de Finanzas del Grupo Gloria en .NET 6 y .NET Framework (Clean Architecture, CQRS) y sus paquetes PL/SQL en Oracle.",
-          "Integré BCP, Interbank y Scotiabank al sistema Host to Host del Grupo Gloria, que procesa los pagos masivos de planillas, proveedores y transferencias del grupo: los lotes se generan en SAP y se envían a cada banco mediante servicios SOAP.",
-          "Migré la plataforma de pagos de Windows Forms a una aplicación web en React y .NET, con selección masiva de pagos y gestión de permisos; el área de Finanzas pasó de unos 30 minutos a pocos minutos por proceso de pago.",
-          "Desarrollé APIs REST en Java 11 con Spring Boot, combinando programación funcional (Streams, Optional) e imperativa, para los módulos del sistema de monitoreo de empaquetado de productos Gloria, desplegados en AWS EKS.",
-          "Llevé a un dashboard el empaquetado de las líneas en tiempo real, consumiendo APIs integradas con los PLC de planta, con monitoreo de logs en ELK (Kibana).",
-          "Participé en la promoción \"Gloriosa\", televisada a nivel nacional, con funciones AWS Lambda y scripts de automatización en Python."
+          "Desarrollé APIs REST en Java 11 con Spring Boot para el sistema de monitoreo de empaquetado de las plantas de Gloria, desplegadas en AWS EKS.",
+          "Construí el dashboard que muestra en tiempo real el empaquetado de cada línea, alimentado por APIs conectadas a los PLC de planta, y monitoreé los servicios con ELK y Kibana.",
+          "Integré BCP, Interbank y Scotiabank al sistema Host to Host del grupo, por donde salen los pagos masivos de planillas y proveedores: los lotes se generan en SAP y viajan a cada banco por servicios SOAP.",
+          "Migré la plataforma de pagos de Windows Forms a una web en React y .NET. Con la selección masiva y la gestión de permisos, Finanzas pasó de unos 30 minutos a pocos minutos por proceso de pago.",
+          "Mantuve y refactoricé el sistema de Finanzas en .NET 6 y .NET Framework con Clean Architecture y CQRS, junto con sus paquetes PL/SQL.",
+          "Participé en la promoción \"Gloriosa\", que se transmitió a nivel nacional, con funciones en AWS Lambda y scripts en Python."
         ]
       },
       "digitalia-tec": {
-        "role": "Senior Backend Engineer | .NET & React",
+        "role": "Senior Java Backend Developer (Freelance)",
         "achievements": [
-          "Diseño y desarrollo de APIs REST en .NET Core para el área de Contabilidad de Juntoz.com, incluyendo una vista funcional para el cálculo de ingresos y egresos diarios del e-commerce.",
-          "Desarrollo y mantenimiento de interfaces frontend en React con TypeScript, consumiendo las APIs REST para los módulos contables del sistema.",
-          "Implementación del patrón CQRS mediante comandos, consultas y Mediator, logrando una separación clara de responsabilidades.",
-          "Aplicación de patrones de diseño en los servicios del sistema MerchantCentral para mejorar mantenibilidad y extensibilidad.",
-          "Configuración de pipelines CI/CD en Azure DevOps para automatizar pruebas, despliegues y gestión de versiones, trabajando bajo metodología Scrum.",
-          "Implementación de autenticación mediante OAuth 2.0 para proteger los endpoints de las APIs consumidas por los módulos contables."
+          "APIs REST en Java con Spring Boot para el área de Contabilidad de Juntoz.com.",
+          "En React, mantenimiento de la aplicación web y nuevos módulos integrados con esas APIs.",
+          "CI/CD en Azure DevOps."
         ]
       },
       "casino-atlantic-city": {
-        "role": "System Senior Specialist",
+        "role": "Java Backend Engineer",
         "achievements": [
-          "Desarrollo de APIs REST en .NET (Core, .NET 5 y .NET 6) para los sistemas internos del casino online.",
-          "Diseño e implementación de un nuevo modelo de API Gateway con Kong Enterprise, habilitando un ecosistema de microservicios para el casino online.",
-          "Creación de la aplicación \"Finanzas Atlantic\" para visualizar ingresos y egresos del casino online, integrando procesos ETL desde SAP, SQL Server y Oracle, reduciendo el tiempo de cálculo y carga de información hacia los ERP del cliente.",
-          "Desarrollo de funciones serverless (AWS Lambda) para automatizar tareas del backend como el procesamiento de eventos y la generación de reportes financieros, reduciendo la carga sobre los servidores principales.",
-          "Configuración de monitoreo y alertas con Amazon CloudWatch para el seguimiento de logs y métricas de la plataforma, mejorando la detección temprana de incidencias en producción.",
-          "Coordinación de un equipo de 4 personas bajo metodología Scrum."
+          "APIs REST en Java con Spring Boot y frontend en React.",
+          "La app \"Finanzas Atlantic\" con procesos ETL desde SAP, SQL Server y Oracle.",
+          "API Gateway con Kong Enterprise.",
+          "Coordinación de un equipo de 4 personas."
         ]
       },
       "ntt-data": {
         "role": "Fullstack Developer .NET",
         "achievements": [
-          "Desarrollo de la aplicación CVT para la tribu ARPAY en BCP, aplicación web en MVC ASP.NET, con repositorio en Bitbucket e integración de pipelines CI/CD en Jenkins.",
-          "Integración de la aplicación CVT con bases de datos Oracle para la gestión de información financiera de la tribu ARPAY.",
-          "Documentación técnica de los desarrollos culminados y soporte en tiempo real a los equipos de la tribu ARPAY, bajo metodología ágil Scrum."
+          "Desarrollé la aplicación CVT en ASP.NET MVC para la tribu ARPAY del BCP, integrada con Oracle y con CI/CD en Jenkins.",
+          "Di soporte a los equipos de la tribu."
         ]
       },
       "experis": {
@@ -108,7 +103,7 @@
         ]
       },
       "sigcomt": {
-        "role": "Backend Developer .NET · Oracle",
+        "role": "Backend Developer Java · Oracle",
         "achievements": [
           "Desarrollo de nuevos módulos (evaluación crediticia, generación de tarjetas, aprobación de créditos) y servicios SOAP/REST para Compartamos Financiera."
         ]
@@ -126,16 +121,24 @@
     "title": "Tecnologías con las que trabajo",
     "description": "Stack organizado por área, de lo que uso a diario a las herramientas que complementan mi flujo de trabajo.",
     "groups": {
-      "backend": "Backend",
+      "backend-java": "Backend Java",
+      "backend-dotnet": "Backend .NET",
       "frontend": "Frontend",
       "databases": "Bases de Datos",
       "cloud-devops": "Cloud & DevOps",
-      "messaging": "Arquitectura & Mensajería",
       "observability": "Calidad",
+      "messaging": "Mensajería",
+      "other-tech": "Otras tecnologías",
+      "methodologies": "Metodologías",
+      "languages": "Idiomas",
       "ai-tools": "Herramientas de IA"
     },
     "items": {
-      "Microservicios": "Microservicios"
+      "Microservicios": "Microservicios",
+      "Java 11 y 21": "Java 11 y 21",
+      "APIs REST": "APIs REST",
+      "xUnit con Moq": "xUnit con Moq",
+      "Inglés básico (A2)": "Inglés básico (A2)"
     }
   },
   "projects": {
@@ -192,40 +195,24 @@
   "education": {
     "eyebrow": "Formación",
     "title": "Educación y Certificaciones",
-    "description": "Formación académica en curso y certificaciones que respaldan mi especialización en arquitectura, seguridad y buenas prácticas.",
+    "description": "Formación académica en curso y certificaciones 2026.",
     "degree": "Ingeniería de Sistemas",
     "institution": "Universidad Peruana de Ciencias Aplicadas (UPC)",
     "detail": "Programa EPE",
     "groups": {
-      "architecture": "Arquitectura & Microservicios",
-      "security": "Seguridad",
-      "best-practices": "Buenas Prácticas & Patrones",
-      "devops": "DevOps & Herramientas",
-      "fullstack-dotnet": "Frontend & Backend (.NET)",
-      "methodologies": "Metodologías"
+      "certifications": "Certificaciones"
     },
     "items": {
-      "architecture": {
-        "0": "Clean Architecture: Microservicios con .NET 6 y RabbitMQ"
-      },
-      "security": {
-        "0": "Microservices Security",
-        "1": "Mastering the Security Code Review"
-      },
-      "best-practices": {
-        "0": "Clean Code"
-      },
-      "devops": {
-        "0": "Azure DevOps Fundamentals for Beginners",
-        "1": "Git: experto (GitHub y GitLab)"
-      },
-      "fullstack-dotnet": {
-        "0": "ASP.NET Core Web Application (POO, SOLID, MVC, EF Core, Bootstrap, jQuery)",
-        "1": "Web Application Angular 11",
-        "2": "REST Services .NET 5"
-      },
-      "methodologies": {
-        "0": "Scrum Fundamentals Certified"
+      "certifications": {
+        "0": "AI with GitHub Copilot for Java & Spring Boot Developers",
+        "1": "Starting with Quarkus Reactive",
+        "2": "Software Architecture and Design of Modern Large Scale Systems",
+        "3": "SOLID Principles: Software Architecture and Design",
+        "4": "Clean Architecture for Beginners",
+        "5": "Azure Serverless Functions and Logic Apps",
+        "6": "Curso Completo de Microsoft Azure AI Fundamentals AI-900",
+        "7": "Azure AI Studio",
+        "8": "Terraform Code Infrastructure"
       }
     }
   },

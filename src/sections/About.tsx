@@ -9,15 +9,12 @@ export function About() {
       <SectionTitle
         eyebrow={t('about.eyebrow')}
         title={t('about.title')}
-        description={t('hero.tagline')}
       />
       <div className="grid gap-8 md:grid-cols-3">
         <p className="text-base leading-relaxed text-slate-600 md:col-span-2 dark:text-slate-400">
           {t('about.paragraph1')}
           <br /><br />
           {t('about.paragraph2')}
-          <br /><br />
-          {t('about.paragraph3')}
         </p>
         <dl className="space-y-4 text-sm">
           <div>

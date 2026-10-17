@@ -41,7 +41,7 @@ function EducationCard() {
 function CertificationGroupCard({ group, index }: { group: CertificationGroup; index: number }) {
   const { t } = useTranslation()
   const { ref, isInView } = useInView<HTMLDivElement>()
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
   const Icon = group.icon
 
   return (
@@ -109,7 +109,7 @@ export function Education() {
 
       <EducationCard />
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6">
         {certificationGroups.map((group, index) => (
           <CertificationGroupCard key={group.id} group={group} index={index} />
         ))}

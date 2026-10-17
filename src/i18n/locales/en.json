@@ -18,7 +18,7 @@
   "hero": {
     "badge": "Available for new opportunities",
     "greeting": "Hi, I'm",
-    "tagline": "I design and build web applications and APIs with .NET, Angular and React for clients in the financial, retail and entertainment sectors.",
+    "tagline": "Senior Full Stack Software Engineer: I build web applications and APIs with Java (Spring Boot) and .NET, with React and Angular frontends, for clients in the retail, financial and industrial sectors.",
     "ctaContact": "Contact me",
     "terminal": {
       "initStack": "initialize_stack()",
@@ -30,9 +30,8 @@
   "about": {
     "eyebrow": "About me",
     "title": "A bit of my story",
-    "paragraph1": "Senior .NET Developer with 8 years of experience designing and building web applications and APIs with C#, .NET (Framework, Core, .NET 6/8/9) and ASP.NET MVC, complemented by Angular/React and TypeScript on the frontend, for clients in the financial, retail and entertainment sectors. 4 years of experience with Oracle databases, plus SQL Server, and 6 years working in agile teams (Scrum/Kanban).",
-    "paragraph2": "Experience with Clean Architecture, CQRS and design patterns, REST/SOAP API integration, Entity Framework, continuous delivery with Azure DevOps and cloud services on Azure and AWS. I follow Clean Code and SOLID practices and use AI tools (Claude, Cursor) to speed up development and code refactoring.",
-    "paragraph3": "I keep growing: finishing my Systems Engineering degree at UPC, and using Claude and Cursor as part of my daily workflow to speed up development without sacrificing quality.",
+    "paragraph1": "Senior Full Stack Software Engineer with 8 years of experience in Java and .NET, with React and Angular frontends. Extensive retail experience, plus financial and industrial projects. 4 years with Oracle and always in agile Scrum teams.",
+    "paragraph2": "Microservices, Clean Architecture, design patterns and REST/SOAP integration. Deployments on Azure (CI/CD in Azure DevOps), AWS (EKS, Lambda, CloudWatch) and GCP (Pub/Sub, Cloud Storage). I apply Clean Code and SOLID.",
     "location": "Location",
     "email": "Email"
   },
@@ -46,53 +45,49 @@
     "additional": "Additional experience",
     "items": {
       "topstrategic": {
-        "role": "Senior .NET Full-Stack Developer (Freelance)",
+        "role": "Senior Full Stack Engineer (Freelance)",
         "achievements": [
-          "Built from scratch, in .NET 8/9 and Angular 21, the Finance, SKU pricing and Logistics/Finance operations systems for Oechsle and Promart Homecenter.",
-          "Optimized the batch process that reconciled nationwide sales for Finance (about 1 million records), which ran overnight and took 2 to 4 hours: I redesigned it in .NET with asynchronous parallel batch processing (async/await, Task.WhenAll and SemaphoreSlim) and in-memory preloading of the codes to match, removing record-by-record queries; it now finishes in 6 to 10 minutes and runs during the day.",
-          "Finance opened 3 to 4 tickets a day (up to 14 at month-end close) for wrong codes, costs and calculations, with no way to see where the error came from; I restructured the frontend with validations and per-record error tracing, and those tickets dropped drastically.",
-          "Built REST services in .NET with JWT, communicating through Kafka and deployed on Docker/Kubernetes, integrated with Azure Functions and Blob Storage, and tested with xUnit/NUnit and Moq."
+          "Built new projects from start to finish: REST services in Java with Spring Boot and JPA on Oracle, React frontends and deployment on GCP.",
+          "Maintained the legacy .NET 5 and 6 systems for Finance, the SKU price management system and operations management, including their services and jobs.",
+          "Implemented publishing of product events with SKU, price and promotions to GCP Pub/Sub topics; the logistics system consumes them and loads them into CT3 on Oracle.",
+          "Migrated the Tax Management System (SGT) from .NET Framework to React and Java 21 with Spring Boot. It now responds faster and its APIs are ready to be reused by other systems.",
+          "Cut the Finance sales reconciliation batch from 2-4 hours to 6-10 minutes, about one million records, by processing it in parallel batches with CompletableFuture and loading the codes into memory.",
+          "Restructured the React frontend with validations and per-record tracing. Finance used to open 3 to 4 tickets a day for wrong codes and calculations, and up to 14 at month-end close; those tickets dropped noticeably."
         ]
       },
       "evol": {
-        "role": "Senior Software Engineer",
+        "role": "Senior Java Software Engineer",
         "achievements": [
-          "Maintained and refactored Grupo Gloria's Finance system in .NET 6 and .NET Framework (Clean Architecture, CQRS) and its Oracle PL/SQL packages.",
-          "Integrated BCP, Interbank and Scotiabank into Grupo Gloria's Host to Host system, which processes bulk payments for payroll, suppliers and group transfers: payment batches are generated in SAP and sent to each bank through SOAP services.",
-          "Migrated the payments platform from Windows Forms to a web application in React and .NET, with bulk payment selection and permission management; Finance went from about 30 minutes to a few minutes per payment run.",
-          "Built REST APIs in Java 11 with Spring Boot, combining functional (Streams, Optional) and imperative programming, for the modules of the Gloria product packaging monitoring system, deployed on AWS EKS.",
-          "Brought production-line packaging into a real-time dashboard by consuming APIs integrated with the plant PLCs, with log monitoring in ELK (Kibana).",
-          "Worked on the \"Gloriosa\" promotion, broadcast nationwide, with AWS Lambda functions and Python automation scripts."
+          "Built REST APIs in Java 11 with Spring Boot for the packaging monitoring system of Gloria's plants, deployed on AWS EKS.",
+          "Built the dashboard that shows each line's packaging in real time, fed by APIs connected to the plant PLCs, and monitored the services with ELK and Kibana.",
+          "Integrated BCP, Interbank and Scotiabank into the group's Host to Host system, which handles bulk payroll and supplier payments: batches are generated in SAP and sent to each bank through SOAP services.",
+          "Migrated the payments platform from Windows Forms to a React and .NET web app. With bulk selection and permission management, Finance went from about 30 minutes to a few minutes per payment run.",
+          "Maintained and refactored the Finance system in .NET 6 and .NET Framework with Clean Architecture and CQRS, along with its PL/SQL packages.",
+          "Worked on the \"Gloriosa\" promotion, broadcast nationwide, with AWS Lambda functions and Python scripts."
         ]
       },
       "digitalia-tec": {
-        "role": "Senior Backend Engineer | .NET & React",
+        "role": "Senior Java Backend Developer (Freelance)",
         "achievements": [
-          "Designed and built REST APIs in .NET Core for Juntoz.com's Accounting department, including a functional view for calculating daily e-commerce income and expenses.",
-          "Developed and maintained frontend interfaces in React with TypeScript, consuming the REST APIs for the system's accounting modules.",
-          "Implemented the CQRS pattern through commands, queries and Mediator, achieving a clear separation of responsibilities.",
-          "Applied design patterns across the MerchantCentral system's services to improve maintainability and extensibility.",
-          "Configured CI/CD pipelines in Azure DevOps to automate testing, deployments and version management, working under Scrum methodology.",
-          "Implemented OAuth 2.0 authentication to secure the API endpoints consumed by the accounting modules."
+          "REST APIs in Java with Spring Boot for the Accounting area of Juntoz.com.",
+          "In React, maintenance of the web application and new modules integrated with those APIs.",
+          "CI/CD on Azure DevOps."
         ]
       },
       "casino-atlantic-city": {
-        "role": "System Senior Specialist",
+        "role": "Java Backend Engineer",
         "achievements": [
-          "Built REST APIs in .NET (Core, .NET 5 and .NET 6) for the online casino's internal systems.",
-          "Designed and implemented a new API Gateway model with Kong Enterprise, enabling a microservices ecosystem for the online casino.",
-          "Created the \"Finanzas Atlantic\" application to track the online casino's income and expenses, integrating ETL processes from SAP, SQL Server and Oracle, reducing calculation time and data load to the client's ERP systems.",
-          "Built serverless functions (AWS Lambda) to automate backend tasks such as event processing and financial report generation, reducing the load on main servers.",
-          "Configured monitoring and alerts with Amazon CloudWatch to track platform logs and metrics, improving early detection of production incidents.",
-          "Coordinated a 4-person team under Scrum methodology."
+          "REST APIs in Java with Spring Boot and React frontend.",
+          "The \"Finanzas Atlantic\" app with ETL processes from SAP, SQL Server and Oracle.",
+          "An API Gateway with Kong Enterprise.",
+          "Led a team of 4."
         ]
       },
       "ntt-data": {
         "role": "Fullstack Developer .NET",
         "achievements": [
-          "Built the CVT application for the ARPAY tribe at BCP, a web application in ASP.NET MVC, with a Bitbucket repository and CI/CD pipeline integration in Jenkins.",
-          "Integrated the CVT application with Oracle databases for managing the ARPAY tribe's financial information.",
-          "Provided technical documentation for completed developments and real-time support to the ARPAY tribe's teams, under agile Scrum methodology."
+          "Built the CVT application in ASP.NET MVC for BCP's ARPAY tribe, integrated with Oracle and with CI/CD on Jenkins.",
+          "Supported the tribe's teams."
         ]
       },
       "experis": {
@@ -108,7 +103,7 @@
         ]
       },
       "sigcomt": {
-        "role": "Backend Developer .NET · Oracle",
+        "role": "Backend Developer Java · Oracle",
         "achievements": [
           "Built new modules (credit evaluation, card issuance, loan approval) and SOAP/REST services for Compartamos Financiera."
         ]
@@ -126,16 +121,24 @@
     "title": "Technologies I work with",
     "description": "Stack organized by area, from what I use daily to the tools that complement my workflow.",
     "groups": {
-      "backend": "Backend",
+      "backend-java": "Java Backend",
+      "backend-dotnet": ".NET Backend",
       "frontend": "Frontend",
       "databases": "Databases",
       "cloud-devops": "Cloud & DevOps",
-      "messaging": "Architecture & Messaging",
       "observability": "Quality",
+      "messaging": "Messaging",
+      "other-tech": "Other technologies",
+      "methodologies": "Methodologies",
+      "languages": "Languages",
       "ai-tools": "AI Tools"
     },
     "items": {
-      "Microservicios": "Microservices"
+      "Microservicios": "Microservices",
+      "Java 11 y 21": "Java 11 and 21",
+      "APIs REST": "REST APIs",
+      "xUnit con Moq": "xUnit with Moq",
+      "Inglés básico (A2)": "Spanish (native), English (A2)"
     }
   },
   "projects": {
@@ -192,40 +195,24 @@
   "education": {
     "eyebrow": "Education",
     "title": "Education & Certifications",
-    "description": "Ongoing academic training and certifications backing my specialization in architecture, security and best practices.",
+    "description": "Ongoing academic training and 2026 certifications.",
     "degree": "Systems Engineering",
     "institution": "Universidad Peruana de Ciencias Aplicadas (UPC)",
     "detail": "EPE Program",
     "groups": {
-      "architecture": "Architecture & Microservices",
-      "security": "Security",
-      "best-practices": "Best Practices & Patterns",
-      "devops": "DevOps & Tools",
-      "fullstack-dotnet": "Frontend & Backend (.NET)",
-      "methodologies": "Methodologies"
+      "certifications": "Certifications"
     },
     "items": {
-      "architecture": {
-        "0": "Clean Architecture: Microservices with .NET 6 and RabbitMQ"
-      },
-      "security": {
-        "0": "Microservices Security",
-        "1": "Mastering the Security Code Review"
-      },
-      "best-practices": {
-        "0": "Clean Code"
-      },
-      "devops": {
-        "0": "Azure DevOps Fundamentals for Beginners",
-        "1": "Git: Expert (GitHub and GitLab)"
-      },
-      "fullstack-dotnet": {
-        "0": "ASP.NET Core Web Application (OOP, SOLID, MVC, EF Core, Bootstrap, jQuery)",
-        "1": "Web Application Angular 11",
-        "2": "REST Services .NET 5"
-      },
-      "methodologies": {
-        "0": "Scrum Fundamentals Certified"
+      "certifications": {
+        "0": "AI with GitHub Copilot for Java & Spring Boot Developers",
+        "1": "Starting with Quarkus Reactive",
+        "2": "Software Architecture and Design of Modern Large Scale Systems",
+        "3": "SOLID Principles: Software Architecture and Design",
+        "4": "Clean Architecture for Beginners",
+        "5": "Azure Serverless Functions and Logic Apps",
+        "6": "Microsoft Azure AI Fundamentals AI-900 Complete Course",
+        "7": "Azure AI Studio",
+        "8": "Terraform Code Infrastructure"
       }
     }
   },

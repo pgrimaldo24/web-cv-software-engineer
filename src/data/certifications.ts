@@ -1,56 +1,21 @@
-import { GitBranch, Layers, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
+import { Award } from 'lucide-react'
 import type { CertificationGroup } from '../types'
 
 export const certificationGroups: CertificationGroup[] = [
   {
-    id: 'architecture',
-    category: 'Arquitectura & Microservicios',
-    icon: Sparkles,
+    id: 'certifications',
+    category: 'Certificaciones',
+    icon: Award,
     items: [
-      { name: 'Clean Architecture: Microservicios con .NET 6 y RabbitMQ', institution: 'Udemy', year: '2022' },
+      { name: 'AI with GitHub Copilot for Java & Spring Boot Developers', institution: 'Udemy', year: '2026' },
+      { name: 'Starting with Quarkus Reactive', institution: 'Udemy', year: '2026' },
+      { name: 'Software Architecture and Design of Modern Large Scale Systems', institution: 'Udemy', year: '2026' },
+      { name: 'SOLID Principles: Software Architecture and Design', institution: 'Udemy', year: '2026' },
+      { name: 'Clean Architecture for Beginners', institution: 'Udemy', year: '2026' },
+      { name: 'Azure Serverless Functions and Logic Apps', institution: 'Udemy', year: '2026' },
+      { name: 'Curso Completo de Microsoft Azure AI Fundamentals AI-900', institution: 'Udemy', year: '2026' },
+      { name: 'Azure AI Studio', institution: 'Udemy', year: '2026' },
+      { name: 'Terraform Code Infrastructure', institution: 'Udemy', year: '2026' },
     ],
-  },
-  {
-    id: 'security',
-    category: 'Seguridad',
-    icon: ShieldCheck,
-    items: [
-      { name: 'Microservices Security', year: '2026' },
-      { name: 'Mastering the Security Code Review', year: '2026' },
-    ],
-  },
-  {
-    id: 'best-practices',
-    category: 'Buenas Prácticas & Patrones',
-    icon: Sparkles,
-    items: [{ name: 'Clean Code', year: '2026' }],
-  },
-  {
-    id: 'devops',
-    category: 'DevOps & Herramientas',
-    icon: GitBranch,
-    items: [
-      { name: 'Azure DevOps Fundamentals for Beginners', year: '2026' },
-      { name: 'Git: experto (GitHub y GitLab)', institution: 'Udemy', year: '2021' },
-    ],
-  },
-  {
-    id: 'fullstack-dotnet',
-    category: 'Frontend & Backend (.NET)',
-    icon: Layers,
-    items: [
-      {
-        name: 'ASP.NET Core Web Application (POO, SOLID, MVC, EF Core, Bootstrap, jQuery)',
-        institution: 'Galaxy Training Perú',
-      },
-      { name: 'Web Application Angular 11', institution: 'Galaxy Training Perú', year: '2021' },
-      { name: 'REST Services .NET 5', institution: 'Galaxy Training Perú', year: '2021' },
-    ],
-  },
-  {
-    id: 'methodologies',
-    category: 'Metodologías',
-    icon: Workflow,
-    items: [{ name: 'Scrum Fundamentals Certified', institution: 'VMEdu Inc.', year: '2020' }],
   },
 ]
